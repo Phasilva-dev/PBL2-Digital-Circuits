@@ -1,0 +1,891 @@
+Analysis & Synthesis report for pbl2
+Wed Nov 22 16:26:45 2023
+Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Port Connectivity Checks: "matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|demux_count_3b:E_demux_count_3b|contador_3bits:count3|t_flip_flop:count3_2"
+ 12. Port Connectivity Checks: "matrizes_e_rbg:pos_atq_rbg|ataque:atacando|comparador:atq_x_pos"
+ 13. Port Connectivity Checks: "matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|comparador:atq_x_pos"
+ 14. Port Connectivity Checks: "matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|mux140_35:mapas"
+ 15. Port Connectivity Checks: "mux_demux_seg:exibir_seg|contador_2bits:cont_seg|t_flip_flop:count1_2"
+ 16. Port Connectivity Checks: "mux_demux_seg:exibir_seg|contador_2bits:cont_seg|t_flip_flop:count0_2"
+ 17. Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff15"
+ 18. Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff14"
+ 19. Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff13"
+ 20. Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff12"
+ 21. Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff11"
+ 22. Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff10"
+ 23. Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff9"
+ 24. Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff8"
+ 25. Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff7"
+ 26. Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff6"
+ 27. Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff5"
+ 28. Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff4"
+ 29. Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff3"
+ 30. Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff2"
+ 31. Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff1"
+ 32. Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff0"
+ 33. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                 ;
++-----------------------------+------------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Wed Nov 22 16:26:45 2023          ;
+; Quartus Prime Version       ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
+; Revision Name               ; pbl2                                           ;
+; Top-level Entity Name       ; main                                           ;
+; Family                      ; MAX II                                         ;
+; Total logic elements        ; 210                                            ;
+; Total pins                  ; 36                                             ;
+; Total virtual pins          ; 0                                              ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                                  ;
++-----------------------------+------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EPM240T100C5       ;                    ;
+; Top-level entity name                                            ; main               ; pbl2               ;
+; Family name                                                      ; MAX II             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                            ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                              ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------+---------+
+; ataque.v                         ; yes             ; User Verilog HDL File  ; C:/Projetos/PBL2_Pedro_Completo_22Nov/ataque.v            ;         ;
+; clock_divisor_16x.v              ; yes             ; User Verilog HDL File  ; C:/Projetos/PBL2_Pedro_Completo_22Nov/clock_divisor_16x.v ;         ;
+; col_x_lin.v                      ; yes             ; User Verilog HDL File  ; C:/Projetos/PBL2_Pedro_Completo_22Nov/col_x_lin.v         ;         ;
+; coluna_cod.v                     ; yes             ; User Verilog HDL File  ; C:/Projetos/PBL2_Pedro_Completo_22Nov/coluna_cod.v        ;         ;
+; comparador.v                     ; yes             ; User Verilog HDL File  ; C:/Projetos/PBL2_Pedro_Completo_22Nov/comparador.v        ;         ;
+; contador_2bits.v                 ; yes             ; User Verilog HDL File  ; C:/Projetos/PBL2_Pedro_Completo_22Nov/contador_2bits.v    ;         ;
+; contador_3bits.v                 ; yes             ; User Verilog HDL File  ; C:/Projetos/PBL2_Pedro_Completo_22Nov/contador_3bits.v    ;         ;
+; d_flip_flop.v                    ; yes             ; User Verilog HDL File  ; C:/Projetos/PBL2_Pedro_Completo_22Nov/d_flip_flop.v       ;         ;
+; demux_count_3b.v                 ; yes             ; User Verilog HDL File  ; C:/Projetos/PBL2_Pedro_Completo_22Nov/demux_count_3b.v    ;         ;
+; exibir_matriz.v                  ; yes             ; User Verilog HDL File  ; C:/Projetos/PBL2_Pedro_Completo_22Nov/exibir_matriz.v     ;         ;
+; linha_cod.v                      ; yes             ; User Verilog HDL File  ; C:/Projetos/PBL2_Pedro_Completo_22Nov/linha_cod.v         ;         ;
+; main.v                           ; yes             ; User Verilog HDL File  ; C:/Projetos/PBL2_Pedro_Completo_22Nov/main.v              ;         ;
+; matrizes_e_rbg.v                 ; yes             ; User Verilog HDL File  ; C:/Projetos/PBL2_Pedro_Completo_22Nov/matrizes_e_rbg.v    ;         ;
+; mux35_5.v                        ; yes             ; User Verilog HDL File  ; C:/Projetos/PBL2_Pedro_Completo_22Nov/mux35_5.v           ;         ;
+; mux70_35.v                       ; yes             ; User Verilog HDL File  ; C:/Projetos/PBL2_Pedro_Completo_22Nov/mux70_35.v          ;         ;
+; mux140_35.v                      ; yes             ; User Verilog HDL File  ; C:/Projetos/PBL2_Pedro_Completo_22Nov/mux140_35.v         ;         ;
+; mux_demux_seg.v                  ; yes             ; User Verilog HDL File  ; C:/Projetos/PBL2_Pedro_Completo_22Nov/mux_demux_seg.v     ;         ;
+; posicionamento.v                 ; yes             ; User Verilog HDL File  ; C:/Projetos/PBL2_Pedro_Completo_22Nov/posicionamento.v    ;         ;
+; salvar_mapa.v                    ; yes             ; User Verilog HDL File  ; C:/Projetos/PBL2_Pedro_Completo_22Nov/salvar_mapa.v       ;         ;
+; salvar_mapa2.v                   ; yes             ; User Verilog HDL File  ; C:/Projetos/PBL2_Pedro_Completo_22Nov/salvar_mapa2.v      ;         ;
+; segmento_coluna.v                ; yes             ; User Verilog HDL File  ; C:/Projetos/PBL2_Pedro_Completo_22Nov/segmento_coluna.v   ;         ;
+; segmento_estado.v                ; yes             ; User Verilog HDL File  ; C:/Projetos/PBL2_Pedro_Completo_22Nov/segmento_estado.v   ;         ;
+; segmento_linha.v                 ; yes             ; User Verilog HDL File  ; C:/Projetos/PBL2_Pedro_Completo_22Nov/segmento_linha.v    ;         ;
+; t_flip_flop.v                    ; yes             ; User Verilog HDL File  ; C:/Projetos/PBL2_Pedro_Completo_22Nov/t_flip_flop.v       ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Total logic elements                        ; 210   ;
+;     -- Combinational with no register       ; 144   ;
+;     -- Register only                        ; 5     ;
+;     -- Combinational with a register        ; 61    ;
+;                                             ;       ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 116   ;
+;     -- 3 input functions                    ; 38    ;
+;     -- 2 input functions                    ; 22    ;
+;     -- 1 input functions                    ; 29    ;
+;     -- 0 input functions                    ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 210   ;
+;     -- arithmetic mode                      ; 0     ;
+;     -- qfbk mode                            ; 0     ;
+;     -- register cascade mode                ; 0     ;
+;     -- synchronous clear/load mode          ; 0     ;
+;     -- asynchronous clear/load mode         ; 42    ;
+;                                             ;       ;
+; Total registers                             ; 66    ;
+; I/O pins                                    ; 36    ;
+; Maximum fan-out node                        ; ch7   ;
+; Maximum fan-out                             ; 61    ;
+; Total fan-out                               ; 785   ;
+; Average fan-out                             ; 3.19  ;
++---------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                  ;
++--------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+--------------+
+; Compilation Hierarchy Node                 ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                                                                                             ; Entity Name       ; Library Name ;
++--------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+--------------+
+; |main                                      ; 210 (0)     ; 66           ; 0          ; 36   ; 0            ; 144 (0)      ; 5 (0)             ; 61 (0)           ; 0 (0)           ; 0 (0)      ; |main                                                                                                                                                           ; main              ; work         ;
+;    |clock_divisor_16x:div_freq|            ; 16 (0)      ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 16 (0)           ; 0 (0)           ; 0 (0)      ; |main|clock_divisor_16x:div_freq                                                                                                                                ; clock_divisor_16x ; work         ;
+;       |t_flip_flop:ff0|                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|clock_divisor_16x:div_freq|t_flip_flop:ff0                                                                                                                ; t_flip_flop       ; work         ;
+;       |t_flip_flop:ff10|                   ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|clock_divisor_16x:div_freq|t_flip_flop:ff10                                                                                                               ; t_flip_flop       ; work         ;
+;       |t_flip_flop:ff11|                   ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|clock_divisor_16x:div_freq|t_flip_flop:ff11                                                                                                               ; t_flip_flop       ; work         ;
+;       |t_flip_flop:ff12|                   ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|clock_divisor_16x:div_freq|t_flip_flop:ff12                                                                                                               ; t_flip_flop       ; work         ;
+;       |t_flip_flop:ff13|                   ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|clock_divisor_16x:div_freq|t_flip_flop:ff13                                                                                                               ; t_flip_flop       ; work         ;
+;       |t_flip_flop:ff14|                   ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|clock_divisor_16x:div_freq|t_flip_flop:ff14                                                                                                               ; t_flip_flop       ; work         ;
+;       |t_flip_flop:ff15|                   ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|clock_divisor_16x:div_freq|t_flip_flop:ff15                                                                                                               ; t_flip_flop       ; work         ;
+;       |t_flip_flop:ff1|                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|clock_divisor_16x:div_freq|t_flip_flop:ff1                                                                                                                ; t_flip_flop       ; work         ;
+;       |t_flip_flop:ff2|                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|clock_divisor_16x:div_freq|t_flip_flop:ff2                                                                                                                ; t_flip_flop       ; work         ;
+;       |t_flip_flop:ff3|                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|clock_divisor_16x:div_freq|t_flip_flop:ff3                                                                                                                ; t_flip_flop       ; work         ;
+;       |t_flip_flop:ff4|                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|clock_divisor_16x:div_freq|t_flip_flop:ff4                                                                                                                ; t_flip_flop       ; work         ;
+;       |t_flip_flop:ff5|                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|clock_divisor_16x:div_freq|t_flip_flop:ff5                                                                                                                ; t_flip_flop       ; work         ;
+;       |t_flip_flop:ff6|                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|clock_divisor_16x:div_freq|t_flip_flop:ff6                                                                                                                ; t_flip_flop       ; work         ;
+;       |t_flip_flop:ff7|                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|clock_divisor_16x:div_freq|t_flip_flop:ff7                                                                                                                ; t_flip_flop       ; work         ;
+;       |t_flip_flop:ff8|                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|clock_divisor_16x:div_freq|t_flip_flop:ff8                                                                                                                ; t_flip_flop       ; work         ;
+;       |t_flip_flop:ff9|                    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|clock_divisor_16x:div_freq|t_flip_flop:ff9                                                                                                                ; t_flip_flop       ; work         ;
+;    |matrizes_e_rbg:pos_atq_rbg|            ; 163 (0)     ; 48           ; 0          ; 0    ; 0            ; 115 (0)      ; 5 (0)             ; 43 (0)           ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg                                                                                                                                ; matrizes_e_rbg    ; work         ;
+;       |ataque:atacando|                    ; 85 (0)      ; 29           ; 0          ; 0    ; 0            ; 56 (0)       ; 0 (0)             ; 29 (0)           ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando                                                                                                                ; ataque            ; work         ;
+;          |col_x_lin:variaveis_de_ataque|   ; 85 (32)     ; 29           ; 0          ; 0    ; 0            ; 56 (32)      ; 0 (0)             ; 29 (0)           ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque                                                                                  ; col_x_lin         ; work         ;
+;             |comparador:atq_x_pos|         ; 23 (23)     ; 0            ; 0          ; 0    ; 0            ; 23 (23)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|comparador:atq_x_pos                                                             ; comparador        ; work         ;
+;             |salvar_mapa:matriz_de_atq|    ; 30 (1)      ; 29           ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 29 (0)           ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq                                                        ; salvar_mapa       ; work         ;
+;                |d_flip_flop:ffa0|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffa0                                       ; d_flip_flop       ; work         ;
+;                |d_flip_flop:ffa1|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffa1                                       ; d_flip_flop       ; work         ;
+;                |d_flip_flop:ffa2|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffa2                                       ; d_flip_flop       ; work         ;
+;                |d_flip_flop:ffa4|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffa4                                       ; d_flip_flop       ; work         ;
+;                |d_flip_flop:ffa5|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffa5                                       ; d_flip_flop       ; work         ;
+;                |d_flip_flop:ffa6|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffa6                                       ; d_flip_flop       ; work         ;
+;                |d_flip_flop:ffb0|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffb0                                       ; d_flip_flop       ; work         ;
+;                |d_flip_flop:ffb1|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffb1                                       ; d_flip_flop       ; work         ;
+;                |d_flip_flop:ffb2|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffb2                                       ; d_flip_flop       ; work         ;
+;                |d_flip_flop:ffb5|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffb5                                       ; d_flip_flop       ; work         ;
+;                |d_flip_flop:ffb6|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffb6                                       ; d_flip_flop       ; work         ;
+;                |d_flip_flop:ffc0|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffc0                                       ; d_flip_flop       ; work         ;
+;                |d_flip_flop:ffc1|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffc1                                       ; d_flip_flop       ; work         ;
+;                |d_flip_flop:ffc2|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffc2                                       ; d_flip_flop       ; work         ;
+;                |d_flip_flop:ffc3|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffc3                                       ; d_flip_flop       ; work         ;
+;                |d_flip_flop:ffc4|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffc4                                       ; d_flip_flop       ; work         ;
+;                |d_flip_flop:ffc6|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffc6                                       ; d_flip_flop       ; work         ;
+;                |d_flip_flop:ffd0|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffd0                                       ; d_flip_flop       ; work         ;
+;                |d_flip_flop:ffd3|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffd3                                       ; d_flip_flop       ; work         ;
+;                |d_flip_flop:ffd4|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffd4                                       ; d_flip_flop       ; work         ;
+;                |d_flip_flop:ffd5|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffd5                                       ; d_flip_flop       ; work         ;
+;                |d_flip_flop:ffd6|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffd6                                       ; d_flip_flop       ; work         ;
+;                |d_flip_flop:ffe0|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffe0                                       ; d_flip_flop       ; work         ;
+;                |d_flip_flop:ffe1|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffe1                                       ; d_flip_flop       ; work         ;
+;                |d_flip_flop:ffe2|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffe2                                       ; d_flip_flop       ; work         ;
+;                |d_flip_flop:ffe3|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffe3                                       ; d_flip_flop       ; work         ;
+;                |d_flip_flop:ffe4|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffe4                                       ; d_flip_flop       ; work         ;
+;                |d_flip_flop:ffe5|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffe5                                       ; d_flip_flop       ; work         ;
+;                |d_flip_flop:ffe6|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffe6                                       ; d_flip_flop       ; work         ;
+;       |exibir_matriz:matriz_final|         ; 58 (7)      ; 6            ; 0          ; 0    ; 0            ; 52 (7)       ; 0 (0)             ; 6 (0)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final                                                                                                     ; exibir_matriz     ; work         ;
+;          |contador_3bits:count3|           ; 3 (0)       ; 3            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|contador_3bits:count3                                                                               ; contador_3bits    ; work         ;
+;             |contador_2bits:count3_01|     ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|contador_3bits:count3|contador_2bits:count3_01                                                      ; contador_2bits    ; work         ;
+;                |t_flip_flop:count0_2|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|contador_3bits:count3|contador_2bits:count3_01|t_flip_flop:count0_2                                 ; t_flip_flop       ; work         ;
+;                |t_flip_flop:count1_2|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|contador_3bits:count3|contador_2bits:count3_01|t_flip_flop:count1_2                                 ; t_flip_flop       ; work         ;
+;             |t_flip_flop:count3_2|         ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|contador_3bits:count3|t_flip_flop:count3_2                                                          ; t_flip_flop       ; work         ;
+;          |demux_count_3b:E_demux_count_3b| ; 10 (7)      ; 3            ; 0          ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|demux_count_3b:E_demux_count_3b                                                                     ; demux_count_3b    ; work         ;
+;             |contador_3bits:count3|        ; 3 (0)       ; 3            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|demux_count_3b:E_demux_count_3b|contador_3bits:count3                                               ; contador_3bits    ; work         ;
+;                |contador_2bits:count3_01|  ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|demux_count_3b:E_demux_count_3b|contador_3bits:count3|contador_2bits:count3_01                      ; contador_2bits    ; work         ;
+;                   |t_flip_flop:count0_2|   ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|demux_count_3b:E_demux_count_3b|contador_3bits:count3|contador_2bits:count3_01|t_flip_flop:count0_2 ; t_flip_flop       ; work         ;
+;                   |t_flip_flop:count1_2|   ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|demux_count_3b:E_demux_count_3b|contador_3bits:count3|contador_2bits:count3_01|t_flip_flop:count1_2 ; t_flip_flop       ; work         ;
+;                |t_flip_flop:count3_2|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|demux_count_3b:E_demux_count_3b|contador_3bits:count3|t_flip_flop:count3_2                          ; t_flip_flop       ; work         ;
+;          |mux35_5:E_mux35_5|               ; 38 (38)     ; 0            ; 0          ; 0    ; 0            ; 38 (38)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|mux35_5:E_mux35_5                                                                                   ; mux35_5           ; work         ;
+;       |posicionamento:pos_matriz|          ; 20 (0)      ; 13           ; 0          ; 0    ; 0            ; 7 (0)        ; 5 (0)             ; 8 (0)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz                                                                                                      ; posicionamento    ; work         ;
+;          |mux140_35:mapas|                 ; 6 (6)       ; 0            ; 0          ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|mux140_35:mapas                                                                                      ; mux140_35         ; work         ;
+;          |salvar_mapa2:mapa_posicao|       ; 14 (1)      ; 13           ; 0          ; 0    ; 0            ; 1 (1)        ; 5 (0)             ; 8 (0)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao                                                                            ; salvar_mapa2      ; work         ;
+;             |d_flip_flop:ffa0|             ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffa0                                                           ; d_flip_flop       ; work         ;
+;             |d_flip_flop:ffa2|             ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffa2                                                           ; d_flip_flop       ; work         ;
+;             |d_flip_flop:ffa5|             ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffa5                                                           ; d_flip_flop       ; work         ;
+;             |d_flip_flop:ffb0|             ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffb0                                                           ; d_flip_flop       ; work         ;
+;             |d_flip_flop:ffb1|             ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffb1                                                           ; d_flip_flop       ; work         ;
+;             |d_flip_flop:ffb2|             ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffb2                                                           ; d_flip_flop       ; work         ;
+;             |d_flip_flop:ffb5|             ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffb5                                                           ; d_flip_flop       ; work         ;
+;             |d_flip_flop:ffb6|             ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffb6                                                           ; d_flip_flop       ; work         ;
+;             |d_flip_flop:ffc4|             ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffc4                                                           ; d_flip_flop       ; work         ;
+;             |d_flip_flop:ffe1|             ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffe1                                                           ; d_flip_flop       ; work         ;
+;             |d_flip_flop:ffe2|             ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffe2                                                           ; d_flip_flop       ; work         ;
+;             |d_flip_flop:ffe3|             ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffe3                                                           ; d_flip_flop       ; work         ;
+;             |d_flip_flop:ffe5|             ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffe5                                                           ; d_flip_flop       ; work         ;
+;    |mux_demux_seg:exibir_seg|              ; 31 (29)     ; 2            ; 0          ; 0    ; 0            ; 29 (29)      ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |main|mux_demux_seg:exibir_seg                                                                                                                                  ; mux_demux_seg     ; work         ;
+;       |contador_2bits:cont_seg|            ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |main|mux_demux_seg:exibir_seg|contador_2bits:cont_seg                                                                                                          ; contador_2bits    ; work         ;
+;          |t_flip_flop:count0_2|            ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|mux_demux_seg:exibir_seg|contador_2bits:cont_seg|t_flip_flop:count0_2                                                                                     ; t_flip_flop       ; work         ;
+;          |t_flip_flop:count1_2|            ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|mux_demux_seg:exibir_seg|contador_2bits:cont_seg|t_flip_flop:count1_2                                                                                     ; t_flip_flop       ; work         ;
++--------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                                                                                            ;
++---------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+
+; Register name                                                                                                             ; Reason for Removal                                                                                                ;
++---------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+
+; matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffd2|q_reg                     ; Stuck at GND due to stuck port data_in                                                                            ;
+; matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffd1|q_reg                     ; Stuck at GND due to stuck port data_in                                                                            ;
+; matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffc5|q_reg                     ; Stuck at GND due to stuck port data_in                                                                            ;
+; matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffb4|q_reg                     ; Stuck at GND due to stuck port data_in                                                                            ;
+; matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffb3|q_reg                     ; Stuck at GND due to stuck port data_in                                                                            ;
+; matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffa3|q_reg                     ; Stuck at GND due to stuck port data_in                                                                            ;
+; matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffd2|q_reg ; Lost fanout                                                                                                       ;
+; matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffd1|q_reg ; Lost fanout                                                                                                       ;
+; matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffc5|q_reg ; Lost fanout                                                                                                       ;
+; matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffb4|q_reg ; Lost fanout                                                                                                       ;
+; matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffb3|q_reg ; Lost fanout                                                                                                       ;
+; matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffa3|q_reg ; Lost fanout                                                                                                       ;
+; matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffa1|q_reg                     ; Merged with matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffe5|q_reg ;
+; matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffa4|q_reg                     ; Merged with matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffe3|q_reg ;
+; matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffc3|q_reg                     ; Merged with matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffe3|q_reg ;
+; matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffc2|q_reg                     ; Merged with matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffe1|q_reg ;
+; matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffd0|q_reg                     ; Merged with matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffe1|q_reg ;
+; matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffd5|q_reg                     ; Merged with matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffe1|q_reg ;
+; matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffd6|q_reg                     ; Merged with matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffe1|q_reg ;
+; matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffe0|q_reg                     ; Merged with matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffe1|q_reg ;
+; matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffa6|q_reg                     ; Merged with matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffa0|q_reg ;
+; matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffe4|q_reg                     ; Merged with matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffa0|q_reg ;
+; matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffe6|q_reg                     ; Merged with matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffa2|q_reg ;
+; matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffc0|q_reg                     ; Merged with matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffa5|q_reg ;
+; matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffd3|q_reg                     ; Merged with matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffa5|q_reg ;
+; matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffc6|q_reg                     ; Merged with matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffb1|q_reg ;
+; matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffc1|q_reg                     ; Merged with matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffb5|q_reg ;
+; matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffd4|q_reg                     ; Merged with matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffb6|q_reg ;
+; Total Number of Removed Registers = 28                                                                                    ;                                                                                                                   ;
++---------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                                                                                                                   ;
++-------------------------------------------------------------------------------------------------------+---------------------------+---------------------------------------------------------------------------------------------------------------------------+
+; Register name                                                                                         ; Reason for Removal        ; Registers Removed due to This Register                                                                                    ;
++-------------------------------------------------------------------------------------------------------+---------------------------+---------------------------------------------------------------------------------------------------------------------------+
+; matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffd2|q_reg ; Stuck at GND              ; matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffd2|q_reg ;
+;                                                                                                       ; due to stuck port data_in ;                                                                                                                           ;
+; matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffd1|q_reg ; Stuck at GND              ; matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffd1|q_reg ;
+;                                                                                                       ; due to stuck port data_in ;                                                                                                                           ;
+; matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffc5|q_reg ; Stuck at GND              ; matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffc5|q_reg ;
+;                                                                                                       ; due to stuck port data_in ;                                                                                                                           ;
+; matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffb4|q_reg ; Stuck at GND              ; matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffb4|q_reg ;
+;                                                                                                       ; due to stuck port data_in ;                                                                                                                           ;
+; matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffb3|q_reg ; Stuck at GND              ; matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffb3|q_reg ;
+;                                                                                                       ; due to stuck port data_in ;                                                                                                                           ;
+; matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffa3|q_reg ; Stuck at GND              ; matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffa3|q_reg ;
+;                                                                                                       ; due to stuck port data_in ;                                                                                                                           ;
++-------------------------------------------------------------------------------------------------------+---------------------------+---------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 66    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 42    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|demux_count_3b:E_demux_count_3b|contador_3bits:count3|t_flip_flop:count3_2" ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                                          ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------+
+; t     ; Input  ; Info     ; Stuck at VCC                                                                                                                     ;
+; q_bar ; Output ; Info     ; Explicitly unconnected                                                                                                           ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "matrizes_e_rbg:pos_atq_rbg|ataque:atacando|comparador:atq_x_pos" ;
++----------+--------+----------+--------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                      ;
++----------+--------+----------+--------------------------------------------------------------+
+; vermelho ; Output ; Info     ; Explicitly unconnected                                       ;
+; verde    ; Output ; Info     ; Explicitly unconnected                                       ;
++----------+--------+----------+--------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|comparador:atq_x_pos" ;
++--------+--------+----------+----------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                      ;
++--------+--------+----------+----------------------------------------------------------------------------------------------+
+; atq_a0 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_b0 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_c0 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_d0 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_e0 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_a1 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_b1 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_c1 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_d1 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_e1 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_a2 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_b2 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_c2 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_d2 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_e2 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_a3 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_b3 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_c3 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_d3 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_e3 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_a4 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_b4 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_c4 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_d4 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_e4 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_a5 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_b5 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_c5 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_d5 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_e5 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_a6 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_b6 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_c6 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_d6 ; Output ; Info     ; Explicitly unconnected                                                                       ;
+; atq_e6 ; Output ; Info     ; Explicitly unconnected                                                                       ;
++--------+--------+----------+----------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|mux140_35:mapas" ;
++------+-------+----------+------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                ;
++------+-------+----------+------------------------------------------------------------------------+
+; a00  ; Input ; Info     ; Stuck at VCC                                                           ;
+; b00  ; Input ; Info     ; Stuck at VCC                                                           ;
+; c00  ; Input ; Info     ; Stuck at VCC                                                           ;
+; d00  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; e00  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; a01  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; b01  ; Input ; Info     ; Stuck at VCC                                                           ;
+; c01  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; d01  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; e01  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; a02  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; b02  ; Input ; Info     ; Stuck at VCC                                                           ;
+; c02  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; d02  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; e02  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; a03  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; b03  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; c03  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; d03  ; Input ; Info     ; Stuck at VCC                                                           ;
+; e03  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; a04  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; b04  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; c04  ; Input ; Info     ; Stuck at VCC                                                           ;
+; d04  ; Input ; Info     ; Stuck at VCC                                                           ;
+; e04  ; Input ; Info     ; Stuck at VCC                                                           ;
+; a05  ; Input ; Info     ; Stuck at VCC                                                           ;
+; b05  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; c05  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; d05  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; e05  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; a06  ; Input ; Info     ; Stuck at VCC                                                           ;
+; b06  ; Input ; Info     ; Stuck at VCC                                                           ;
+; c06  ; Input ; Info     ; Stuck at VCC                                                           ;
+; d06  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; e06  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; a10  ; Input ; Info     ; Stuck at VCC                                                           ;
+; b10  ; Input ; Info     ; Stuck at VCC                                                           ;
+; c10  ; Input ; Info     ; Stuck at VCC                                                           ;
+; d10  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; e10  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; a11  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; b11  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; c11  ; Input ; Info     ; Stuck at VCC                                                           ;
+; d11  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; e11  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; a12  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; b12  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; c12  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; d12  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; e12  ; Input ; Info     ; Stuck at VCC                                                           ;
+; a13  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; b13  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; c13  ; Input ; Info     ; Stuck at VCC                                                           ;
+; d13  ; Input ; Info     ; Stuck at VCC                                                           ;
+; e13  ; Input ; Info     ; Stuck at VCC                                                           ;
+; a14  ; Input ; Info     ; Stuck at VCC                                                           ;
+; b14  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; c14  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; d14  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; e14  ; Input ; Info     ; Stuck at VCC                                                           ;
+; a15  ; Input ; Info     ; Stuck at VCC                                                           ;
+; b15  ; Input ; Info     ; Stuck at VCC                                                           ;
+; c15  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; d15  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; e15  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; a16  ; Input ; Info     ; Stuck at VCC                                                           ;
+; b16  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; c16  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; d16  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; e16  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; a20  ; Input ; Info     ; Stuck at VCC                                                           ;
+; b20  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; c20  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; d20  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; e20  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; a21  ; Input ; Info     ; Stuck at VCC                                                           ;
+; b21  ; Input ; Info     ; Stuck at VCC                                                           ;
+; c21  ; Input ; Info     ; Stuck at VCC                                                           ;
+; d21  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; e21  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; a22  ; Input ; Info     ; Stuck at VCC                                                           ;
+; b22  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; c22  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; d22  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; e22  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; a23  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; b23  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; c23  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; d23  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; e23  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; a24  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; b24  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; c24  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; d24  ; Input ; Info     ; Stuck at VCC                                                           ;
+; e24  ; Input ; Info     ; Stuck at VCC                                                           ;
+; a25  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; b25  ; Input ; Info     ; Stuck at VCC                                                           ;
+; c25  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; d25  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; e25  ; Input ; Info     ; Stuck at VCC                                                           ;
+; a26  ; Input ; Info     ; Stuck at VCC                                                           ;
+; b26  ; Input ; Info     ; Stuck at VCC                                                           ;
+; c26  ; Input ; Info     ; Stuck at VCC                                                           ;
+; d26  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; e26  ; Input ; Info     ; Stuck at VCC                                                           ;
+; a30  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; b30  ; Input ; Info     ; Stuck at VCC                                                           ;
+; c30  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; d30  ; Input ; Info     ; Stuck at VCC                                                           ;
+; e30  ; Input ; Info     ; Stuck at VCC                                                           ;
+; a31  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; b31  ; Input ; Info     ; Stuck at VCC                                                           ;
+; c31  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; d31  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; e31  ; Input ; Info     ; Stuck at VCC                                                           ;
+; a32  ; Input ; Info     ; Stuck at VCC                                                           ;
+; b32  ; Input ; Info     ; Stuck at VCC                                                           ;
+; c32  ; Input ; Info     ; Stuck at VCC                                                           ;
+; d32  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; e32  ; Input ; Info     ; Stuck at VCC                                                           ;
+; a33  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; b33  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; c33  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; d33  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; e33  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; a34  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; b34  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; c34  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; d34  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; e34  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; a35  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; b35  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; c35  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; d35  ; Input ; Info     ; Stuck at VCC                                                           ;
+; e35  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; a36  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; b36  ; Input ; Info     ; Explicitly unconnected                                                 ;
+; c36  ; Input ; Info     ; Stuck at VCC                                                           ;
+; d36  ; Input ; Info     ; Stuck at VCC                                                           ;
+; e36  ; Input ; Info     ; Stuck at VCC                                                           ;
++------+-------+----------+------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux_demux_seg:exibir_seg|contador_2bits:cont_seg|t_flip_flop:count1_2" ;
++-------+--------+----------+-----------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                               ;
++-------+--------+----------+-----------------------------------------------------------------------+
+; t     ; Input  ; Info     ; Stuck at VCC                                                          ;
+; q_bar ; Output ; Info     ; Explicitly unconnected                                                ;
++-------+--------+----------+-----------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux_demux_seg:exibir_seg|contador_2bits:cont_seg|t_flip_flop:count0_2" ;
++-------+--------+----------+-----------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                               ;
++-------+--------+----------+-----------------------------------------------------------------------+
+; t     ; Input  ; Info     ; Stuck at VCC                                                          ;
+; q_bar ; Output ; Info     ; Explicitly unconnected                                                ;
++-------+--------+----------+-----------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff15" ;
++-------+--------+----------+---------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                     ;
++-------+--------+----------+---------------------------------------------+
+; t     ; Input  ; Info     ; Stuck at VCC                                ;
+; q_bar ; Output ; Info     ; Explicitly unconnected                      ;
++-------+--------+----------+---------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff14" ;
++-------+--------+----------+---------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                     ;
++-------+--------+----------+---------------------------------------------+
+; t     ; Input  ; Info     ; Stuck at VCC                                ;
+; q_bar ; Output ; Info     ; Explicitly unconnected                      ;
++-------+--------+----------+---------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff13" ;
++-------+--------+----------+---------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                     ;
++-------+--------+----------+---------------------------------------------+
+; t     ; Input  ; Info     ; Stuck at VCC                                ;
+; q_bar ; Output ; Info     ; Explicitly unconnected                      ;
++-------+--------+----------+---------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff12" ;
++-------+--------+----------+---------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                     ;
++-------+--------+----------+---------------------------------------------+
+; t     ; Input  ; Info     ; Stuck at VCC                                ;
+; q_bar ; Output ; Info     ; Explicitly unconnected                      ;
++-------+--------+----------+---------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff11" ;
++-------+--------+----------+---------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                     ;
++-------+--------+----------+---------------------------------------------+
+; t     ; Input  ; Info     ; Stuck at VCC                                ;
+; q_bar ; Output ; Info     ; Explicitly unconnected                      ;
++-------+--------+----------+---------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff10" ;
++-------+--------+----------+---------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                     ;
++-------+--------+----------+---------------------------------------------+
+; t     ; Input  ; Info     ; Stuck at VCC                                ;
+; q_bar ; Output ; Info     ; Explicitly unconnected                      ;
++-------+--------+----------+---------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff9" ;
++-------+--------+----------+--------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                    ;
++-------+--------+----------+--------------------------------------------+
+; t     ; Input  ; Info     ; Stuck at VCC                               ;
+; q_bar ; Output ; Info     ; Explicitly unconnected                     ;
++-------+--------+----------+--------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff8" ;
++-------+--------+----------+--------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                    ;
++-------+--------+----------+--------------------------------------------+
+; t     ; Input  ; Info     ; Stuck at VCC                               ;
+; q_bar ; Output ; Info     ; Explicitly unconnected                     ;
++-------+--------+----------+--------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff7" ;
++-------+--------+----------+--------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                    ;
++-------+--------+----------+--------------------------------------------+
+; t     ; Input  ; Info     ; Stuck at VCC                               ;
+; q_bar ; Output ; Info     ; Explicitly unconnected                     ;
++-------+--------+----------+--------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff6" ;
++-------+--------+----------+--------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                    ;
++-------+--------+----------+--------------------------------------------+
+; t     ; Input  ; Info     ; Stuck at VCC                               ;
+; q_bar ; Output ; Info     ; Explicitly unconnected                     ;
++-------+--------+----------+--------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff5" ;
++-------+--------+----------+--------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                    ;
++-------+--------+----------+--------------------------------------------+
+; t     ; Input  ; Info     ; Stuck at VCC                               ;
+; q_bar ; Output ; Info     ; Explicitly unconnected                     ;
++-------+--------+----------+--------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff4" ;
++-------+--------+----------+--------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                    ;
++-------+--------+----------+--------------------------------------------+
+; t     ; Input  ; Info     ; Stuck at VCC                               ;
+; q_bar ; Output ; Info     ; Explicitly unconnected                     ;
++-------+--------+----------+--------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff3" ;
++-------+--------+----------+--------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                    ;
++-------+--------+----------+--------------------------------------------+
+; t     ; Input  ; Info     ; Stuck at VCC                               ;
+; q_bar ; Output ; Info     ; Explicitly unconnected                     ;
++-------+--------+----------+--------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff2" ;
++-------+--------+----------+--------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                    ;
++-------+--------+----------+--------------------------------------------+
+; t     ; Input  ; Info     ; Stuck at VCC                               ;
+; q_bar ; Output ; Info     ; Explicitly unconnected                     ;
++-------+--------+----------+--------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff1" ;
++-------+--------+----------+--------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                    ;
++-------+--------+----------+--------------------------------------------+
+; t     ; Input  ; Info     ; Stuck at VCC                               ;
+; q_bar ; Output ; Info     ; Explicitly unconnected                     ;
++-------+--------+----------+--------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "clock_divisor_16x:div_freq|t_flip_flop:ff0" ;
++-------+--------+----------+--------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                    ;
++-------+--------+----------+--------------------------------------------+
+; t     ; Input  ; Info     ; Stuck at VCC                               ;
+; q_bar ; Output ; Info     ; Explicitly unconnected                     ;
++-------+--------+----------+--------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+    Info: Processing started: Wed Nov 22 16:26:37 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pbl2 -c pbl2
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file ataque.v
+    Info (12023): Found entity 1: ataque File: C:/Projetos/PBL2_Pedro_Completo_22Nov/ataque.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file clock_divisor_16x.v
+    Info (12023): Found entity 1: clock_divisor_16x File: C:/Projetos/PBL2_Pedro_Completo_22Nov/clock_divisor_16x.v Line: 4
+Warning (10275): Verilog HDL Module Instantiation warning at col_x_lin.v(50): ignored dangling comma in List of Port Connections File: C:/Projetos/PBL2_Pedro_Completo_22Nov/col_x_lin.v Line: 50
+Warning (10275): Verilog HDL Module Instantiation warning at col_x_lin.v(62): ignored dangling comma in List of Port Connections File: C:/Projetos/PBL2_Pedro_Completo_22Nov/col_x_lin.v Line: 62
+Info (12021): Found 1 design units, including 1 entities, in source file col_x_lin.v
+    Info (12023): Found entity 1: col_x_lin File: C:/Projetos/PBL2_Pedro_Completo_22Nov/col_x_lin.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file coluna_cod.v
+    Info (12023): Found entity 1: coluna_cod File: C:/Projetos/PBL2_Pedro_Completo_22Nov/coluna_cod.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file comparador.v
+    Info (12023): Found entity 1: comparador File: C:/Projetos/PBL2_Pedro_Completo_22Nov/comparador.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file contador_2bits.v
+    Info (12023): Found entity 1: contador_2bits File: C:/Projetos/PBL2_Pedro_Completo_22Nov/contador_2bits.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file contador_3bits.v
+    Info (12023): Found entity 1: contador_3bits File: C:/Projetos/PBL2_Pedro_Completo_22Nov/contador_3bits.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file d_flip_flop.v
+    Info (12023): Found entity 1: d_flip_flop File: C:/Projetos/PBL2_Pedro_Completo_22Nov/d_flip_flop.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file demux_count_3b.v
+    Info (12023): Found entity 1: demux_count_3b File: C:/Projetos/PBL2_Pedro_Completo_22Nov/demux_count_3b.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file exibir_matriz.v
+    Info (12023): Found entity 1: exibir_matriz File: C:/Projetos/PBL2_Pedro_Completo_22Nov/exibir_matriz.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file linha_cod.v
+    Info (12023): Found entity 1: linha_cod File: C:/Projetos/PBL2_Pedro_Completo_22Nov/linha_cod.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file main.v
+    Info (12023): Found entity 1: main File: C:/Projetos/PBL2_Pedro_Completo_22Nov/main.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file matrizes_e_rbg.v
+    Info (12023): Found entity 1: matrizes_e_rbg File: C:/Projetos/PBL2_Pedro_Completo_22Nov/matrizes_e_rbg.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file mux35_5.v
+    Info (12023): Found entity 1: mux35_5 File: C:/Projetos/PBL2_Pedro_Completo_22Nov/mux35_5.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file mux70_35.v
+    Info (12023): Found entity 1: mux70_35 File: C:/Projetos/PBL2_Pedro_Completo_22Nov/mux70_35.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux140_35.v
+    Info (12023): Found entity 1: mux140_35 File: C:/Projetos/PBL2_Pedro_Completo_22Nov/mux140_35.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file mux_demux_seg.v
+    Info (12023): Found entity 1: mux_demux_seg File: C:/Projetos/PBL2_Pedro_Completo_22Nov/mux_demux_seg.v Line: 6
+Warning (10275): Verilog HDL Module Instantiation warning at posicionamento.v(71): ignored dangling comma in List of Port Connections File: C:/Projetos/PBL2_Pedro_Completo_22Nov/posicionamento.v Line: 71
+Info (12021): Found 1 design units, including 1 entities, in source file posicionamento.v
+    Info (12023): Found entity 1: posicionamento File: C:/Projetos/PBL2_Pedro_Completo_22Nov/posicionamento.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file salvar_mapa.v
+    Info (12023): Found entity 1: salvar_mapa File: C:/Projetos/PBL2_Pedro_Completo_22Nov/salvar_mapa.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file salvar_mapa2.v
+    Info (12023): Found entity 1: salvar_mapa2 File: C:/Projetos/PBL2_Pedro_Completo_22Nov/salvar_mapa2.v Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file segmento_coluna.v
+    Info (12023): Found entity 1: segmento_coluna File: C:/Projetos/PBL2_Pedro_Completo_22Nov/segmento_coluna.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file segmento_estado.v
+    Info (12023): Found entity 1: segmento_estado File: C:/Projetos/PBL2_Pedro_Completo_22Nov/segmento_estado.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file segmento_linha.v
+    Info (12023): Found entity 1: segmento_linha File: C:/Projetos/PBL2_Pedro_Completo_22Nov/segmento_linha.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file t_flip_flop.v
+    Info (12023): Found entity 1: t_flip_flop File: C:/Projetos/PBL2_Pedro_Completo_22Nov/t_flip_flop.v Line: 1
+Info (12127): Elaborating entity "main" for the top level hierarchy
+Info (12128): Elaborating entity "clock_divisor_16x" for hierarchy "clock_divisor_16x:div_freq" File: C:/Projetos/PBL2_Pedro_Completo_22Nov/main.v Line: 17
+Info (12128): Elaborating entity "t_flip_flop" for hierarchy "clock_divisor_16x:div_freq|t_flip_flop:ff0" File: C:/Projetos/PBL2_Pedro_Completo_22Nov/clock_divisor_16x.v Line: 16
+Info (12128): Elaborating entity "mux_demux_seg" for hierarchy "mux_demux_seg:exibir_seg" File: C:/Projetos/PBL2_Pedro_Completo_22Nov/main.v Line: 39
+Info (12128): Elaborating entity "contador_2bits" for hierarchy "mux_demux_seg:exibir_seg|contador_2bits:cont_seg" File: C:/Projetos/PBL2_Pedro_Completo_22Nov/mux_demux_seg.v Line: 32
+Info (12128): Elaborating entity "segmento_estado" for hierarchy "mux_demux_seg:exibir_seg|segmento_estado:dig_1" File: C:/Projetos/PBL2_Pedro_Completo_22Nov/mux_demux_seg.v Line: 45
+Info (12128): Elaborating entity "segmento_coluna" for hierarchy "mux_demux_seg:exibir_seg|segmento_coluna:dig_3" File: C:/Projetos/PBL2_Pedro_Completo_22Nov/mux_demux_seg.v Line: 60
+Info (12128): Elaborating entity "segmento_linha" for hierarchy "mux_demux_seg:exibir_seg|segmento_linha:dig_4" File: C:/Projetos/PBL2_Pedro_Completo_22Nov/mux_demux_seg.v Line: 74
+Info (12128): Elaborating entity "matrizes_e_rbg" for hierarchy "matrizes_e_rbg:pos_atq_rbg" File: C:/Projetos/PBL2_Pedro_Completo_22Nov/main.v Line: 66
+Info (12128): Elaborating entity "posicionamento" for hierarchy "matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz" File: C:/Projetos/PBL2_Pedro_Completo_22Nov/matrizes_e_rbg.v Line: 43
+Info (12128): Elaborating entity "mux140_35" for hierarchy "matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|mux140_35:mapas" File: C:/Projetos/PBL2_Pedro_Completo_22Nov/posicionamento.v Line: 71
+Info (12128): Elaborating entity "salvar_mapa2" for hierarchy "matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao" File: C:/Projetos/PBL2_Pedro_Completo_22Nov/posicionamento.v Line: 90
+Info (12128): Elaborating entity "d_flip_flop" for hierarchy "matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffa0" File: C:/Projetos/PBL2_Pedro_Completo_22Nov/salvar_mapa2.v Line: 30
+Info (12128): Elaborating entity "ataque" for hierarchy "matrizes_e_rbg:pos_atq_rbg|ataque:atacando" File: C:/Projetos/PBL2_Pedro_Completo_22Nov/matrizes_e_rbg.v Line: 64
+Info (12128): Elaborating entity "col_x_lin" for hierarchy "matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque" File: C:/Projetos/PBL2_Pedro_Completo_22Nov/ataque.v Line: 50
+Info (12128): Elaborating entity "linha_cod" for hierarchy "matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|linha_cod:cod_linha" File: C:/Projetos/PBL2_Pedro_Completo_22Nov/col_x_lin.v Line: 50
+Info (12128): Elaborating entity "coluna_cod" for hierarchy "matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|coluna_cod:cod_coluna" File: C:/Projetos/PBL2_Pedro_Completo_22Nov/col_x_lin.v Line: 62
+Info (12128): Elaborating entity "salvar_mapa" for hierarchy "matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq" File: C:/Projetos/PBL2_Pedro_Completo_22Nov/col_x_lin.v Line: 126
+Info (12128): Elaborating entity "comparador" for hierarchy "matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|comparador:atq_x_pos" File: C:/Projetos/PBL2_Pedro_Completo_22Nov/col_x_lin.v Line: 154
+Info (12128): Elaborating entity "mux70_35" for hierarchy "matrizes_e_rbg:pos_atq_rbg|mux70_35:mux_atq_def" File: C:/Projetos/PBL2_Pedro_Completo_22Nov/matrizes_e_rbg.v Line: 94
+Info (12128): Elaborating entity "exibir_matriz" for hierarchy "matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final" File: C:/Projetos/PBL2_Pedro_Completo_22Nov/matrizes_e_rbg.v Line: 109
+Info (12128): Elaborating entity "demux_count_3b" for hierarchy "matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|demux_count_3b:E_demux_count_3b" File: C:/Projetos/PBL2_Pedro_Completo_22Nov/exibir_matriz.v Line: 27
+Info (12128): Elaborating entity "contador_3bits" for hierarchy "matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|demux_count_3b:E_demux_count_3b|contador_3bits:count3" File: C:/Projetos/PBL2_Pedro_Completo_22Nov/demux_count_3b.v Line: 16
+Info (12128): Elaborating entity "mux35_5" for hierarchy "matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|mux35_5:E_mux35_5" File: C:/Projetos/PBL2_Pedro_Completo_22Nov/exibir_matriz.v Line: 56
+Info (13014): Ignored 6 buffer(s)
+    Info (13019): Ignored 6 SOFT buffer(s)
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "p" is stuck at VCC File: C:/Projetos/PBL2_Pedro_Completo_22Nov/main.v Line: 7
+    Warning (13410): Pin "dig2" is stuck at VCC File: C:/Projetos/PBL2_Pedro_Completo_22Nov/main.v Line: 8
+Info (17049): 6 registers lost all their fanouts during netlist optimizations.
+Info (21057): Implemented 246 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 10 input pins
+    Info (21059): Implemented 26 output pins
+    Info (21061): Implemented 210 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 4725 megabytes
+    Info: Processing ended: Wed Nov 22 16:26:45 2023
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:11
+
+

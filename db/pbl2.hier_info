@@ -1,0 +1,2032 @@
+|main
+ch7 => ch7.IN2
+ch6 => ch6.IN2
+ch5 => ch5.IN2
+ch4 => ch4.IN2
+ch3 => ch3.IN2
+ch2 => ch2.IN2
+ch1 => ch1.IN2
+ch0 => ch0.IN2
+clk => clk.IN1
+bt => botao.IN1
+ca << matrizes_e_rbg:pos_atq_rbg.ca
+cb << matrizes_e_rbg:pos_atq_rbg.cb
+cc << matrizes_e_rbg:pos_atq_rbg.cc
+cd << matrizes_e_rbg:pos_atq_rbg.cd
+ce << matrizes_e_rbg:pos_atq_rbg.ce
+l0 << matrizes_e_rbg:pos_atq_rbg.l0
+l1 << matrizes_e_rbg:pos_atq_rbg.l1
+l2 << matrizes_e_rbg:pos_atq_rbg.l2
+l3 << matrizes_e_rbg:pos_atq_rbg.l3
+l4 << matrizes_e_rbg:pos_atq_rbg.l4
+l5 << matrizes_e_rbg:pos_atq_rbg.l5
+l6 << matrizes_e_rbg:pos_atq_rbg.l6
+a << mux_demux_seg:exibir_seg.a
+b << mux_demux_seg:exibir_seg.b
+c << mux_demux_seg:exibir_seg.c
+d << mux_demux_seg:exibir_seg.d
+e << mux_demux_seg:exibir_seg.e
+f << mux_demux_seg:exibir_seg.f
+g << mux_demux_seg:exibir_seg.g
+p << <VCC>
+dig1 << mux_demux_seg:exibir_seg.dig1
+dig2 << mux_demux_seg:exibir_seg.dig2
+dig3 << mux_demux_seg:exibir_seg.dig3
+dig4 << mux_demux_seg:exibir_seg.dig4
+vermelho << matrizes_e_rbg:pos_atq_rbg.vermelho
+verde << matrizes_e_rbg:pos_atq_rbg.verde
+
+
+|main|clock_divisor_16x:div_freq
+clk => clk.IN1
+clk_div <= t_flip_flop:ff15.q
+
+
+|main|clock_divisor_16x:div_freq|t_flip_flop:ff0
+clk => q_reg.CLK
+t => q_reg.ENA
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock_divisor_16x:div_freq|t_flip_flop:ff1
+clk => q_reg.CLK
+t => q_reg.ENA
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock_divisor_16x:div_freq|t_flip_flop:ff2
+clk => q_reg.CLK
+t => q_reg.ENA
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock_divisor_16x:div_freq|t_flip_flop:ff3
+clk => q_reg.CLK
+t => q_reg.ENA
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock_divisor_16x:div_freq|t_flip_flop:ff4
+clk => q_reg.CLK
+t => q_reg.ENA
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock_divisor_16x:div_freq|t_flip_flop:ff5
+clk => q_reg.CLK
+t => q_reg.ENA
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock_divisor_16x:div_freq|t_flip_flop:ff6
+clk => q_reg.CLK
+t => q_reg.ENA
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock_divisor_16x:div_freq|t_flip_flop:ff7
+clk => q_reg.CLK
+t => q_reg.ENA
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock_divisor_16x:div_freq|t_flip_flop:ff8
+clk => q_reg.CLK
+t => q_reg.ENA
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock_divisor_16x:div_freq|t_flip_flop:ff9
+clk => q_reg.CLK
+t => q_reg.ENA
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock_divisor_16x:div_freq|t_flip_flop:ff10
+clk => q_reg.CLK
+t => q_reg.ENA
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock_divisor_16x:div_freq|t_flip_flop:ff11
+clk => q_reg.CLK
+t => q_reg.ENA
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock_divisor_16x:div_freq|t_flip_flop:ff12
+clk => q_reg.CLK
+t => q_reg.ENA
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock_divisor_16x:div_freq|t_flip_flop:ff13
+clk => q_reg.CLK
+t => q_reg.ENA
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock_divisor_16x:div_freq|t_flip_flop:ff14
+clk => q_reg.CLK
+t => q_reg.ENA
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock_divisor_16x:div_freq|t_flip_flop:ff15
+clk => q_reg.CLK
+t => q_reg.ENA
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|mux_demux_seg:exibir_seg
+ch7 => ch7.IN3
+ch6 => ch6.IN2
+ch5 => ch5.IN1
+ch4 => ch4.IN1
+ch3 => ch3.IN1
+ch2 => ch2.IN1
+ch1 => ch1.IN1
+ch0 => ch0.IN1
+clk_div => clk_div.IN1
+dig1 <= and_mux_dig1.DB_MAX_OUTPUT_PORT_TYPE
+dig2 <= <VCC>
+dig3 <= and_mux_dig3.DB_MAX_OUTPUT_PORT_TYPE
+dig4 <= and_mux_dig4.DB_MAX_OUTPUT_PORT_TYPE
+a <= nor_a.DB_MAX_OUTPUT_PORT_TYPE
+b <= nor_b.DB_MAX_OUTPUT_PORT_TYPE
+c <= nor_c.DB_MAX_OUTPUT_PORT_TYPE
+d <= nor_d.DB_MAX_OUTPUT_PORT_TYPE
+e <= nor_e.DB_MAX_OUTPUT_PORT_TYPE
+f <= nor_f.DB_MAX_OUTPUT_PORT_TYPE
+g <= nor_g.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|mux_demux_seg:exibir_seg|contador_2bits:cont_seg
+clk_div => clk_div.IN1
+q0 <= q0.DB_MAX_OUTPUT_PORT_TYPE
+q1 <= t_flip_flop:count1_2.q
+
+
+|main|mux_demux_seg:exibir_seg|contador_2bits:cont_seg|t_flip_flop:count0_2
+clk => q_reg.CLK
+t => q_reg.ENA
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|mux_demux_seg:exibir_seg|contador_2bits:cont_seg|t_flip_flop:count1_2
+clk => q_reg.CLK
+t => q_reg.ENA
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|mux_demux_seg:exibir_seg|segmento_estado:dig_1
+ch7 => nor_a.DATAIN
+ch7 => nor_b.DATAIN
+ch7 => and_ch76.IN0
+ch7 => nor_e.DATAIN
+ch7 => nor_f.DATAIN
+ch7 => nor_g.DATAIN
+ch6 => and_ch76.IN1
+A <= nor_a.DB_MAX_OUTPUT_PORT_TYPE
+B <= nor_b.DB_MAX_OUTPUT_PORT_TYPE
+C <= nor_c.DB_MAX_OUTPUT_PORT_TYPE
+D <= <GND>
+E <= nor_e.DB_MAX_OUTPUT_PORT_TYPE
+F <= nor_f.DB_MAX_OUTPUT_PORT_TYPE
+G <= nor_g.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|mux_demux_seg:exibir_seg|segmento_coluna:dig_3
+ch7 => and_v.IN0
+ch6 => and_v.IN1
+x => and_vxnynz.IN1
+x => and_vnxnz.IN1
+x => and_vnxyz.IN1
+x => and_vnxnynz.IN1
+x => and_vnxny.IN1
+x => and_vnxz.IN1
+x => and_vnxy.IN1
+x => and_vnx.IN1
+y => and_vnxyz.IN2
+y => and_vnxy.IN2
+y => and_vnynz.IN1
+y => and_vnxnynz.IN2
+y => and_vnxny.IN2
+y => and_vxnynz.IN2
+z => and_vnxyz.IN3
+z => and_vnxz.IN2
+z => and_vnxnz.IN2
+z => and_vnynz.IN2
+z => and_vnxnynz.IN3
+z => and_vxnynz.IN3
+A <= nor_a.DB_MAX_OUTPUT_PORT_TYPE
+B <= nor_b.DB_MAX_OUTPUT_PORT_TYPE
+C <= nor_c.DB_MAX_OUTPUT_PORT_TYPE
+D <= nor_d.DB_MAX_OUTPUT_PORT_TYPE
+E <= nor_e.DB_MAX_OUTPUT_PORT_TYPE
+F <= nor_f.DB_MAX_OUTPUT_PORT_TYPE
+G <= nor_g.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|mux_demux_seg:exibir_seg|segmento_linha:dig_4
+v => and_vnxnz.IN0
+v => and_vnxy.IN0
+v => and_vxnyz.IN0
+v => and_vnx.IN0
+v => and_vnynz.IN0
+v => and_vny.IN0
+v => and_vnxz.IN0
+v => and_vxny.IN0
+v => and_vxynz.IN0
+v => and_vynz.IN0
+v => and_vxnz.IN0
+v => and_vnxyz.IN0
+x => and_vxnyz.IN1
+x => and_vxny.IN1
+x => and_vxynz.IN1
+x => and_vxnz.IN1
+x => and_vnxnz.IN1
+x => and_vnxy.IN1
+x => and_vnx.IN1
+x => and_vnxz.IN1
+x => and_vnxyz.IN1
+y => and_vnxy.IN2
+y => and_vxynz.IN2
+y => and_vynz.IN1
+y => and_vnxyz.IN2
+y => and_vxnyz.IN2
+y => and_vnynz.IN1
+y => and_vny.IN1
+y => and_vxny.IN2
+z => and_vxnyz.IN3
+z => and_vnxz.IN2
+z => and_vnxyz.IN3
+z => and_vnxnz.IN2
+z => and_vnynz.IN2
+z => and_vxynz.IN3
+z => and_vynz.IN2
+z => and_vxnz.IN2
+A <= nor_a.DB_MAX_OUTPUT_PORT_TYPE
+B <= nor_b.DB_MAX_OUTPUT_PORT_TYPE
+C <= nor_c.DB_MAX_OUTPUT_PORT_TYPE
+D <= nor_d.DB_MAX_OUTPUT_PORT_TYPE
+E <= nor_e.DB_MAX_OUTPUT_PORT_TYPE
+F <= nor_f.DB_MAX_OUTPUT_PORT_TYPE
+G <= nor_g.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg
+ch7 => ch7.IN2
+ch6 => ch6.IN3
+ch5 => ch5.IN1
+ch4 => ch4.IN1
+ch3 => ch3.IN1
+ch2 => ch2.IN1
+ch1 => ch1.IN2
+ch0 => ch0.IN2
+botao => botao.IN2
+clk_div => clk_div.IN3
+ca <= exibir_matriz:matriz_final.ca
+cb <= exibir_matriz:matriz_final.cb
+cc <= exibir_matriz:matriz_final.cc
+cd <= exibir_matriz:matriz_final.cd
+ce <= exibir_matriz:matriz_final.ce
+l0 <= exibir_matriz:matriz_final.l0
+l1 <= exibir_matriz:matriz_final.l1
+l2 <= exibir_matriz:matriz_final.l2
+l3 <= exibir_matriz:matriz_final.l3
+l4 <= exibir_matriz:matriz_final.l4
+l5 <= exibir_matriz:matriz_final.l5
+l6 <= exibir_matriz:matriz_final.l6
+vermelho <= ataque:atacando.vermelho
+verde <= ataque:atacando.verde
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+ch6 => ch6.IN1
+ch7 => ch7.IN2
+botao => ~NO_FANOUT~
+clk_div => clk_div.IN1
+pos_a0 <= salvar_mapa2:mapa_posicao.ff_a0
+pos_b0 <= salvar_mapa2:mapa_posicao.ff_b0
+pos_c0 <= salvar_mapa2:mapa_posicao.ff_c0
+pos_d0 <= salvar_mapa2:mapa_posicao.ff_d0
+pos_e0 <= salvar_mapa2:mapa_posicao.ff_e0
+pos_a1 <= salvar_mapa2:mapa_posicao.ff_a1
+pos_b1 <= salvar_mapa2:mapa_posicao.ff_b1
+pos_c1 <= salvar_mapa2:mapa_posicao.ff_c1
+pos_d1 <= salvar_mapa2:mapa_posicao.ff_d1
+pos_e1 <= salvar_mapa2:mapa_posicao.ff_e1
+pos_a2 <= salvar_mapa2:mapa_posicao.ff_a2
+pos_b2 <= salvar_mapa2:mapa_posicao.ff_b2
+pos_c2 <= salvar_mapa2:mapa_posicao.ff_c2
+pos_d2 <= salvar_mapa2:mapa_posicao.ff_d2
+pos_e2 <= salvar_mapa2:mapa_posicao.ff_e2
+pos_a3 <= salvar_mapa2:mapa_posicao.ff_a3
+pos_b3 <= salvar_mapa2:mapa_posicao.ff_b3
+pos_c3 <= salvar_mapa2:mapa_posicao.ff_c3
+pos_d3 <= salvar_mapa2:mapa_posicao.ff_d3
+pos_e3 <= salvar_mapa2:mapa_posicao.ff_e3
+pos_a4 <= salvar_mapa2:mapa_posicao.ff_a4
+pos_b4 <= salvar_mapa2:mapa_posicao.ff_b4
+pos_c4 <= salvar_mapa2:mapa_posicao.ff_c4
+pos_d4 <= salvar_mapa2:mapa_posicao.ff_d4
+pos_e4 <= salvar_mapa2:mapa_posicao.ff_e4
+pos_a5 <= salvar_mapa2:mapa_posicao.ff_a5
+pos_b5 <= salvar_mapa2:mapa_posicao.ff_b5
+pos_c5 <= salvar_mapa2:mapa_posicao.ff_c5
+pos_d5 <= salvar_mapa2:mapa_posicao.ff_d5
+pos_e5 <= salvar_mapa2:mapa_posicao.ff_e5
+pos_a6 <= salvar_mapa2:mapa_posicao.ff_a6
+pos_b6 <= salvar_mapa2:mapa_posicao.ff_b6
+pos_c6 <= salvar_mapa2:mapa_posicao.ff_c6
+pos_d6 <= salvar_mapa2:mapa_posicao.ff_d6
+pos_e6 <= salvar_mapa2:mapa_posicao.ff_e6
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|mux140_35:mapas
+ch0 => and_h0.IN1
+ch1 => and_h1.IN1
+ch6 => and_ch7n6.IN0
+ch7 => and_ch7n6.IN1
+a00 => and_a00.IN1
+b00 => and_b00.IN1
+c00 => and_c00.IN1
+d00 => and_d00.IN1
+e00 => and_e00.IN1
+a01 => and_a01.IN1
+b01 => and_b01.IN1
+c01 => and_c01.IN1
+d01 => and_d01.IN1
+e01 => and_e01.IN1
+a02 => and_a02.IN1
+b02 => and_b02.IN1
+c02 => and_c02.IN1
+d02 => and_d02.IN1
+e02 => and_e02.IN1
+a03 => and_a03.IN1
+b03 => and_b03.IN1
+c03 => and_c03.IN1
+d03 => and_d03.IN1
+e03 => and_e03.IN1
+a04 => and_a04.IN1
+b04 => and_b04.IN1
+c04 => and_c04.IN1
+d04 => and_d04.IN1
+e04 => and_e04.IN1
+a05 => and_a05.IN1
+b05 => and_b05.IN1
+c05 => and_c05.IN1
+d05 => and_d05.IN1
+e05 => and_e05.IN1
+a06 => and_a06.IN1
+b06 => and_b06.IN1
+c06 => and_c06.IN1
+d06 => and_d06.IN1
+e06 => and_e06.IN1
+a10 => and_a10.IN1
+b10 => and_b10.IN1
+c10 => and_c10.IN1
+d10 => and_d10.IN1
+e10 => and_e10.IN1
+a11 => and_a11.IN1
+b11 => and_b11.IN1
+c11 => and_c11.IN1
+d11 => and_d11.IN1
+e11 => and_e11.IN1
+a12 => and_a12.IN1
+b12 => and_b12.IN1
+c12 => and_c12.IN1
+d12 => and_d12.IN1
+e12 => and_e12.IN1
+a13 => and_a13.IN1
+b13 => and_b13.IN1
+c13 => and_c13.IN1
+d13 => and_d13.IN1
+e13 => and_e13.IN1
+a14 => and_a14.IN1
+b14 => and_b14.IN1
+c14 => and_c14.IN1
+d14 => and_d14.IN1
+e14 => and_e14.IN1
+a15 => and_a15.IN1
+b15 => and_b15.IN1
+c15 => and_c15.IN1
+d15 => and_d15.IN1
+e15 => and_e15.IN1
+a16 => and_a16.IN1
+b16 => and_b16.IN1
+c16 => and_c16.IN1
+d16 => and_d16.IN1
+e16 => and_e16.IN1
+a20 => and_a20.IN1
+b20 => and_b20.IN1
+c20 => and_c20.IN1
+d20 => and_d20.IN1
+e20 => and_e20.IN1
+a21 => and_a21.IN1
+b21 => and_b21.IN1
+c21 => and_c21.IN1
+d21 => and_d21.IN1
+e21 => and_e21.IN1
+a22 => and_a22.IN1
+b22 => and_b22.IN1
+c22 => and_c22.IN1
+d22 => and_d22.IN1
+e22 => and_e22.IN1
+a23 => and_a23.IN1
+b23 => and_b23.IN1
+c23 => and_c23.IN1
+d23 => and_d23.IN1
+e23 => and_e23.IN1
+a24 => and_a24.IN1
+b24 => and_b24.IN1
+c24 => and_c24.IN1
+d24 => and_d24.IN1
+e24 => and_e24.IN1
+a25 => and_a25.IN1
+b25 => and_b25.IN1
+c25 => and_c25.IN1
+d25 => and_d25.IN1
+e25 => and_e25.IN1
+a26 => and_a26.IN1
+b26 => and_b26.IN1
+c26 => and_c26.IN1
+d26 => and_d26.IN1
+e26 => and_e26.IN1
+a30 => and_a30.IN1
+b30 => and_b30.IN1
+c30 => and_c30.IN1
+d30 => and_d30.IN1
+e30 => and_e30.IN1
+a31 => and_a31.IN1
+b31 => and_b31.IN1
+c31 => and_c31.IN1
+d31 => and_d31.IN1
+e31 => and_e31.IN1
+a32 => and_a32.IN1
+b32 => and_b32.IN1
+c32 => and_c32.IN1
+d32 => and_d32.IN1
+e32 => and_e32.IN1
+a33 => and_a33.IN1
+b33 => and_b33.IN1
+c33 => and_c33.IN1
+d33 => and_d33.IN1
+e33 => and_e33.IN1
+a34 => and_a34.IN1
+b34 => and_b34.IN1
+c34 => and_c34.IN1
+d34 => and_d34.IN1
+e34 => and_e34.IN1
+a35 => and_a35.IN1
+b35 => and_b35.IN1
+c35 => and_c35.IN1
+d35 => and_d35.IN1
+e35 => and_e35.IN1
+a36 => and_a36.IN1
+b36 => and_b36.IN1
+c36 => and_c36.IN1
+d36 => and_d36.IN1
+e36 => and_e36.IN1
+a0 <= or_a0.DB_MAX_OUTPUT_PORT_TYPE
+b0 <= or_b0.DB_MAX_OUTPUT_PORT_TYPE
+c0 <= or_c0.DB_MAX_OUTPUT_PORT_TYPE
+d0 <= or_d0.DB_MAX_OUTPUT_PORT_TYPE
+e0 <= or_e0.DB_MAX_OUTPUT_PORT_TYPE
+a1 <= or_a1.DB_MAX_OUTPUT_PORT_TYPE
+b1 <= or_b1.DB_MAX_OUTPUT_PORT_TYPE
+c1 <= or_c1.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= or_d1.DB_MAX_OUTPUT_PORT_TYPE
+e1 <= or_e1.DB_MAX_OUTPUT_PORT_TYPE
+a2 <= or_a2.DB_MAX_OUTPUT_PORT_TYPE
+b2 <= or_b2.DB_MAX_OUTPUT_PORT_TYPE
+c2 <= or_c2.DB_MAX_OUTPUT_PORT_TYPE
+d2 <= or_d2.DB_MAX_OUTPUT_PORT_TYPE
+e2 <= or_e2.DB_MAX_OUTPUT_PORT_TYPE
+a3 <= or_a3.DB_MAX_OUTPUT_PORT_TYPE
+b3 <= or_b3.DB_MAX_OUTPUT_PORT_TYPE
+c3 <= or_c3.DB_MAX_OUTPUT_PORT_TYPE
+d3 <= or_d3.DB_MAX_OUTPUT_PORT_TYPE
+e3 <= or_e3.DB_MAX_OUTPUT_PORT_TYPE
+a4 <= or_a4.DB_MAX_OUTPUT_PORT_TYPE
+b4 <= or_b4.DB_MAX_OUTPUT_PORT_TYPE
+c4 <= or_c4.DB_MAX_OUTPUT_PORT_TYPE
+d4 <= or_d4.DB_MAX_OUTPUT_PORT_TYPE
+e4 <= or_e4.DB_MAX_OUTPUT_PORT_TYPE
+a5 <= or_a5.DB_MAX_OUTPUT_PORT_TYPE
+b5 <= or_b5.DB_MAX_OUTPUT_PORT_TYPE
+c5 <= or_c5.DB_MAX_OUTPUT_PORT_TYPE
+d5 <= or_d5.DB_MAX_OUTPUT_PORT_TYPE
+e5 <= or_e5.DB_MAX_OUTPUT_PORT_TYPE
+a6 <= or_a6.DB_MAX_OUTPUT_PORT_TYPE
+b6 <= or_b6.DB_MAX_OUTPUT_PORT_TYPE
+c6 <= or_c6.DB_MAX_OUTPUT_PORT_TYPE
+d6 <= or_d6.DB_MAX_OUTPUT_PORT_TYPE
+e6 <= or_e6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao
+botao => and_bch.IN0
+ch6 => and_bch.IN1
+ch7 => nch7.IN35
+a0 => a0.IN1
+b0 => b0.IN1
+c0 => c0.IN1
+d0 => d0.IN1
+e0 => e0.IN1
+a1 => a1.IN1
+b1 => b1.IN1
+c1 => c1.IN1
+d1 => d1.IN1
+e1 => e1.IN1
+a2 => a2.IN1
+b2 => b2.IN1
+c2 => c2.IN1
+d2 => d2.IN1
+e2 => e2.IN1
+a3 => a3.IN1
+b3 => b3.IN1
+c3 => c3.IN1
+d3 => d3.IN1
+e3 => e3.IN1
+a4 => a4.IN1
+b4 => b4.IN1
+c4 => c4.IN1
+d4 => d4.IN1
+e4 => e4.IN1
+a5 => a5.IN1
+b5 => b5.IN1
+c5 => c5.IN1
+d5 => d5.IN1
+e5 => e5.IN1
+a6 => a6.IN1
+b6 => b6.IN1
+c6 => c6.IN1
+d6 => d6.IN1
+e6 => e6.IN1
+ff_a0 <= d_flip_flop:ffa0.q
+ff_b0 <= d_flip_flop:ffb0.q
+ff_c0 <= d_flip_flop:ffc0.q
+ff_d0 <= d_flip_flop:ffd0.q
+ff_e0 <= d_flip_flop:ffe0.q
+ff_a1 <= d_flip_flop:ffa1.q
+ff_b1 <= d_flip_flop:ffb1.q
+ff_c1 <= d_flip_flop:ffc1.q
+ff_d1 <= d_flip_flop:ffd1.q
+ff_e1 <= d_flip_flop:ffe1.q
+ff_a2 <= d_flip_flop:ffa2.q
+ff_b2 <= d_flip_flop:ffb2.q
+ff_c2 <= d_flip_flop:ffc2.q
+ff_d2 <= d_flip_flop:ffd2.q
+ff_e2 <= d_flip_flop:ffe2.q
+ff_a3 <= d_flip_flop:ffa3.q
+ff_b3 <= d_flip_flop:ffb3.q
+ff_c3 <= d_flip_flop:ffc3.q
+ff_d3 <= d_flip_flop:ffd3.q
+ff_e3 <= d_flip_flop:ffe3.q
+ff_a4 <= d_flip_flop:ffa4.q
+ff_b4 <= d_flip_flop:ffb4.q
+ff_c4 <= d_flip_flop:ffc4.q
+ff_d4 <= d_flip_flop:ffd4.q
+ff_e4 <= d_flip_flop:ffe4.q
+ff_a5 <= d_flip_flop:ffa5.q
+ff_b5 <= d_flip_flop:ffb5.q
+ff_c5 <= d_flip_flop:ffc5.q
+ff_d5 <= d_flip_flop:ffd5.q
+ff_e5 <= d_flip_flop:ffe5.q
+ff_a6 <= d_flip_flop:ffa6.q
+ff_b6 <= d_flip_flop:ffb6.q
+ff_c6 <= d_flip_flop:ffc6.q
+ff_d6 <= d_flip_flop:ffd6.q
+ff_e6 <= d_flip_flop:ffe6.q
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffa0
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffa1
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffa2
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffa3
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffa4
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffa5
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffa6
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffb0
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffb1
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffb2
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffb3
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffb4
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffb5
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffb6
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffc0
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffc1
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffc2
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffc3
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffc4
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffc5
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffc6
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffd0
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffd1
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffd2
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffd3
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffd4
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffd5
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffd6
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffe0
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffe1
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffe2
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffe3
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffe4
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffe5
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|posicionamento:pos_matriz|salvar_mapa2:mapa_posicao|d_flip_flop:ffe6
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando
+ch7 => ch7.IN2
+ch6 => ch6.IN2
+ch5 => ch5.IN1
+ch4 => ch4.IN1
+ch3 => ch3.IN1
+ch2 => ch2.IN1
+ch1 => ch1.IN1
+ch0 => ch0.IN1
+botao => botao.IN2
+pos_a0 => pos_a0.IN2
+pos_b0 => pos_b0.IN2
+pos_c0 => pos_c0.IN2
+pos_d0 => pos_d0.IN2
+pos_e0 => pos_e0.IN2
+pos_a1 => pos_a1.IN2
+pos_b1 => pos_b1.IN2
+pos_c1 => pos_c1.IN2
+pos_d1 => pos_d1.IN2
+pos_e1 => pos_e1.IN2
+pos_a2 => pos_a2.IN2
+pos_b2 => pos_b2.IN2
+pos_c2 => pos_c2.IN2
+pos_d2 => pos_d2.IN2
+pos_e2 => pos_e2.IN2
+pos_a3 => pos_a3.IN2
+pos_b3 => pos_b3.IN2
+pos_c3 => pos_c3.IN2
+pos_d3 => pos_d3.IN2
+pos_e3 => pos_e3.IN2
+pos_a4 => pos_a4.IN2
+pos_b4 => pos_b4.IN2
+pos_c4 => pos_c4.IN2
+pos_d4 => pos_d4.IN2
+pos_e4 => pos_e4.IN2
+pos_a5 => pos_a5.IN2
+pos_b5 => pos_b5.IN2
+pos_c5 => pos_c5.IN2
+pos_d5 => pos_d5.IN2
+pos_e5 => pos_e5.IN2
+pos_a6 => pos_a6.IN2
+pos_b6 => pos_b6.IN2
+pos_c6 => pos_c6.IN2
+pos_d6 => pos_d6.IN2
+pos_e6 => pos_e6.IN2
+clk => clk.IN1
+atq_a0 <= comparador:atq_x_pos.atq_a0
+atq_b0 <= comparador:atq_x_pos.atq_b0
+atq_c0 <= comparador:atq_x_pos.atq_c0
+atq_d0 <= comparador:atq_x_pos.atq_d0
+atq_e0 <= comparador:atq_x_pos.atq_e0
+atq_a1 <= comparador:atq_x_pos.atq_a1
+atq_b1 <= comparador:atq_x_pos.atq_b1
+atq_c1 <= comparador:atq_x_pos.atq_c1
+atq_d1 <= comparador:atq_x_pos.atq_d1
+atq_e1 <= comparador:atq_x_pos.atq_e1
+atq_a2 <= comparador:atq_x_pos.atq_a2
+atq_b2 <= comparador:atq_x_pos.atq_b2
+atq_c2 <= comparador:atq_x_pos.atq_c2
+atq_d2 <= comparador:atq_x_pos.atq_d2
+atq_e2 <= comparador:atq_x_pos.atq_e2
+atq_a3 <= comparador:atq_x_pos.atq_a3
+atq_b3 <= comparador:atq_x_pos.atq_b3
+atq_c3 <= comparador:atq_x_pos.atq_c3
+atq_d3 <= comparador:atq_x_pos.atq_d3
+atq_e3 <= comparador:atq_x_pos.atq_e3
+atq_a4 <= comparador:atq_x_pos.atq_a4
+atq_b4 <= comparador:atq_x_pos.atq_b4
+atq_c4 <= comparador:atq_x_pos.atq_c4
+atq_d4 <= comparador:atq_x_pos.atq_d4
+atq_e4 <= comparador:atq_x_pos.atq_e4
+atq_a5 <= comparador:atq_x_pos.atq_a5
+atq_b5 <= comparador:atq_x_pos.atq_b5
+atq_c5 <= comparador:atq_x_pos.atq_c5
+atq_d5 <= comparador:atq_x_pos.atq_d5
+atq_e5 <= comparador:atq_x_pos.atq_e5
+atq_a6 <= comparador:atq_x_pos.atq_a6
+atq_b6 <= comparador:atq_x_pos.atq_b6
+atq_c6 <= comparador:atq_x_pos.atq_c6
+atq_d6 <= comparador:atq_x_pos.atq_d6
+atq_e6 <= comparador:atq_x_pos.atq_e6
+vermelho <= col_x_lin:variaveis_de_ataque.vermelho
+verde <= col_x_lin:variaveis_de_ataque.verde
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque
+ch7 => ch7.IN4
+ch6 => ch6.IN3
+ch5 => ch5.IN1
+ch4 => ch4.IN1
+ch3 => ch3.IN1
+ch2 => ch2.IN1
+ch1 => ch1.IN1
+ch0 => ch0.IN1
+botao => botao.IN1
+clk => clk.IN1
+pos_a0 => pos_a0.IN1
+pos_b0 => pos_b0.IN1
+pos_c0 => pos_c0.IN1
+pos_d0 => pos_d0.IN1
+pos_e0 => pos_e0.IN1
+pos_a1 => pos_a1.IN1
+pos_b1 => pos_b1.IN1
+pos_c1 => pos_c1.IN1
+pos_d1 => pos_d1.IN1
+pos_e1 => pos_e1.IN1
+pos_a2 => pos_a2.IN1
+pos_b2 => pos_b2.IN1
+pos_c2 => pos_c2.IN1
+pos_d2 => pos_d2.IN1
+pos_e2 => pos_e2.IN1
+pos_a3 => pos_a3.IN1
+pos_b3 => pos_b3.IN1
+pos_c3 => pos_c3.IN1
+pos_d3 => pos_d3.IN1
+pos_e3 => pos_e3.IN1
+pos_a4 => pos_a4.IN1
+pos_b4 => pos_b4.IN1
+pos_c4 => pos_c4.IN1
+pos_d4 => pos_d4.IN1
+pos_e4 => pos_e4.IN1
+pos_a5 => pos_a5.IN1
+pos_b5 => pos_b5.IN1
+pos_c5 => pos_c5.IN1
+pos_d5 => pos_d5.IN1
+pos_e5 => pos_e5.IN1
+pos_a6 => pos_a6.IN1
+pos_b6 => pos_b6.IN1
+pos_c6 => pos_c6.IN1
+pos_d6 => pos_d6.IN1
+pos_e6 => pos_e6.IN1
+atq_a0 <= salvar_mapa:matriz_de_atq.ff_a0
+atq_b0 <= salvar_mapa:matriz_de_atq.ff_b0
+atq_c0 <= salvar_mapa:matriz_de_atq.ff_c0
+atq_d0 <= salvar_mapa:matriz_de_atq.ff_d0
+atq_e0 <= salvar_mapa:matriz_de_atq.ff_e0
+atq_a1 <= salvar_mapa:matriz_de_atq.ff_a1
+atq_b1 <= salvar_mapa:matriz_de_atq.ff_b1
+atq_c1 <= salvar_mapa:matriz_de_atq.ff_c1
+atq_d1 <= salvar_mapa:matriz_de_atq.ff_d1
+atq_e1 <= salvar_mapa:matriz_de_atq.ff_e1
+atq_a2 <= salvar_mapa:matriz_de_atq.ff_a2
+atq_b2 <= salvar_mapa:matriz_de_atq.ff_b2
+atq_c2 <= salvar_mapa:matriz_de_atq.ff_c2
+atq_d2 <= salvar_mapa:matriz_de_atq.ff_d2
+atq_e2 <= salvar_mapa:matriz_de_atq.ff_e2
+atq_a3 <= salvar_mapa:matriz_de_atq.ff_a3
+atq_b3 <= salvar_mapa:matriz_de_atq.ff_b3
+atq_c3 <= salvar_mapa:matriz_de_atq.ff_c3
+atq_d3 <= salvar_mapa:matriz_de_atq.ff_d3
+atq_e3 <= salvar_mapa:matriz_de_atq.ff_e3
+atq_a4 <= salvar_mapa:matriz_de_atq.ff_a4
+atq_b4 <= salvar_mapa:matriz_de_atq.ff_b4
+atq_c4 <= salvar_mapa:matriz_de_atq.ff_c4
+atq_d4 <= salvar_mapa:matriz_de_atq.ff_d4
+atq_e4 <= salvar_mapa:matriz_de_atq.ff_e4
+atq_a5 <= salvar_mapa:matriz_de_atq.ff_a5
+atq_b5 <= salvar_mapa:matriz_de_atq.ff_b5
+atq_c5 <= salvar_mapa:matriz_de_atq.ff_c5
+atq_d5 <= salvar_mapa:matriz_de_atq.ff_d5
+atq_e5 <= salvar_mapa:matriz_de_atq.ff_e5
+atq_a6 <= salvar_mapa:matriz_de_atq.ff_a6
+atq_b6 <= salvar_mapa:matriz_de_atq.ff_b6
+atq_c6 <= salvar_mapa:matriz_de_atq.ff_c6
+atq_d6 <= salvar_mapa:matriz_de_atq.ff_d6
+atq_e6 <= salvar_mapa:matriz_de_atq.ff_e6
+vermelho <= comparador:atq_x_pos.vermelho
+verde <= comparador:atq_x_pos.verde
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|linha_cod:cod_linha
+ch7 => and_v.IN0
+ch6 => and_v.IN1
+x => nand_l4.IN1
+x => nand_l5.IN1
+x => nand_l6.IN1
+x => nand_l0.IN1
+x => nand_l1.IN1
+x => nand_l2.IN1
+x => nand_l3.IN1
+y => nand_l2.IN2
+y => nand_l3.IN2
+y => nand_l6.IN2
+y => nand_l0.IN2
+y => nand_l1.IN2
+y => nand_l4.IN2
+y => nand_l5.IN2
+z => nand_l1.IN3
+z => nand_l3.IN3
+z => nand_l5.IN3
+z => nand_l0.IN3
+z => nand_l2.IN3
+z => nand_l4.IN3
+z => nand_l6.IN3
+L0 <= nand_l0.DB_MAX_OUTPUT_PORT_TYPE
+L1 <= nand_l1.DB_MAX_OUTPUT_PORT_TYPE
+L2 <= nand_l2.DB_MAX_OUTPUT_PORT_TYPE
+L3 <= nand_l3.DB_MAX_OUTPUT_PORT_TYPE
+L4 <= nand_l4.DB_MAX_OUTPUT_PORT_TYPE
+L5 <= nand_l5.DB_MAX_OUTPUT_PORT_TYPE
+L6 <= nand_l6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|coluna_cod:cod_coluna
+ch7 => and_v.IN0
+ch6 => and_v.IN1
+x => and_ce.IN1
+x => and_ca.IN1
+x => and_cb.IN1
+x => and_cc.IN1
+x => and_cd.IN1
+y => and_cc.IN2
+y => and_cd.IN2
+y => and_ca.IN2
+y => and_cb.IN2
+y => and_ce.IN2
+z => and_cb.IN3
+z => and_cd.IN3
+z => and_ca.IN3
+z => and_cc.IN3
+z => and_ce.IN3
+CA <= and_ca.DB_MAX_OUTPUT_PORT_TYPE
+CB <= and_cb.DB_MAX_OUTPUT_PORT_TYPE
+CC <= and_cc.DB_MAX_OUTPUT_PORT_TYPE
+CD <= and_cd.DB_MAX_OUTPUT_PORT_TYPE
+CE <= and_ce.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq
+botao => and_bch.IN0
+ch6 => and_bch.IN1
+ch7 => nch7.IN35
+a0 => or_a0.IN1
+b0 => or_b0.IN1
+c0 => or_c0.IN1
+d0 => or_d0.IN1
+e0 => or_e0.IN1
+a1 => or_a1.IN1
+b1 => or_b1.IN1
+c1 => or_c1.IN1
+d1 => or_d1.IN1
+e1 => or_e1.IN1
+a2 => or_a2.IN1
+b2 => or_b2.IN1
+c2 => or_c2.IN1
+d2 => or_d2.IN1
+e2 => or_e2.IN1
+a3 => or_a3.IN1
+b3 => or_b3.IN1
+c3 => or_c3.IN1
+d3 => or_d3.IN1
+e3 => or_e3.IN1
+a4 => or_a4.IN1
+b4 => or_b4.IN1
+c4 => or_c4.IN1
+d4 => or_d4.IN1
+e4 => or_e4.IN1
+a5 => or_a5.IN1
+b5 => or_b5.IN1
+c5 => or_c5.IN1
+d5 => or_d5.IN1
+e5 => or_e5.IN1
+a6 => or_a6.IN1
+b6 => or_b6.IN1
+c6 => or_c6.IN1
+d6 => or_d6.IN1
+e6 => or_e6.IN1
+ff_a0 <= d_flip_flop:ffa0.q
+ff_b0 <= d_flip_flop:ffb0.q
+ff_c0 <= d_flip_flop:ffc0.q
+ff_d0 <= d_flip_flop:ffd0.q
+ff_e0 <= d_flip_flop:ffe0.q
+ff_a1 <= d_flip_flop:ffa1.q
+ff_b1 <= d_flip_flop:ffb1.q
+ff_c1 <= d_flip_flop:ffc1.q
+ff_d1 <= d_flip_flop:ffd1.q
+ff_e1 <= d_flip_flop:ffe1.q
+ff_a2 <= d_flip_flop:ffa2.q
+ff_b2 <= d_flip_flop:ffb2.q
+ff_c2 <= d_flip_flop:ffc2.q
+ff_d2 <= d_flip_flop:ffd2.q
+ff_e2 <= d_flip_flop:ffe2.q
+ff_a3 <= d_flip_flop:ffa3.q
+ff_b3 <= d_flip_flop:ffb3.q
+ff_c3 <= d_flip_flop:ffc3.q
+ff_d3 <= d_flip_flop:ffd3.q
+ff_e3 <= d_flip_flop:ffe3.q
+ff_a4 <= d_flip_flop:ffa4.q
+ff_b4 <= d_flip_flop:ffb4.q
+ff_c4 <= d_flip_flop:ffc4.q
+ff_d4 <= d_flip_flop:ffd4.q
+ff_e4 <= d_flip_flop:ffe4.q
+ff_a5 <= d_flip_flop:ffa5.q
+ff_b5 <= d_flip_flop:ffb5.q
+ff_c5 <= d_flip_flop:ffc5.q
+ff_d5 <= d_flip_flop:ffd5.q
+ff_e5 <= d_flip_flop:ffe5.q
+ff_a6 <= d_flip_flop:ffa6.q
+ff_b6 <= d_flip_flop:ffb6.q
+ff_c6 <= d_flip_flop:ffc6.q
+ff_d6 <= d_flip_flop:ffd6.q
+ff_e6 <= d_flip_flop:ffe6.q
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffa0
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffa1
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffa2
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffa3
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffa4
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffa5
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffa6
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffb0
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffb1
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffb2
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffb3
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffb4
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffb5
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffb6
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffc0
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffc1
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffc2
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffc3
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffc4
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffc5
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffc6
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffd0
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffd1
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffd2
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffd3
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffd4
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffd5
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffd6
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffe0
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffe1
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffe2
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffe3
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffe4
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffe5
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|salvar_mapa:matriz_de_atq|d_flip_flop:ffe6
+clk => q_reg.CLK
+reset => q_reg.ACLR
+d => q_reg.DATAIN
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|col_x_lin:variaveis_de_ataque|comparador:atq_x_pos
+ch7 => ~NO_FANOUT~
+ch6 => ~NO_FANOUT~
+botao => and_verde.IN1
+botao => and_vermelho.IN1
+pos_a0 => and_atq_a0.IN0
+pos_b0 => and_atq_b0.IN0
+pos_c0 => and_atq_c0.IN0
+pos_d0 => and_atq_d0.IN0
+pos_e0 => and_atq_e0.IN0
+pos_a1 => and_atq_a1.IN0
+pos_b1 => and_atq_b1.IN0
+pos_c1 => and_atq_c1.IN0
+pos_d1 => and_atq_d1.IN0
+pos_e1 => and_atq_e1.IN0
+pos_a2 => and_atq_a2.IN0
+pos_b2 => and_atq_b2.IN0
+pos_c2 => and_atq_c2.IN0
+pos_d2 => and_atq_d2.IN0
+pos_e2 => and_atq_e2.IN0
+pos_a3 => and_atq_a3.IN0
+pos_b3 => and_atq_b3.IN0
+pos_c3 => and_atq_c3.IN0
+pos_d3 => and_atq_d3.IN0
+pos_e3 => and_atq_e3.IN0
+pos_a4 => and_atq_a4.IN0
+pos_b4 => and_atq_b4.IN0
+pos_c4 => and_atq_c4.IN0
+pos_d4 => and_atq_d4.IN0
+pos_e4 => and_atq_e4.IN0
+pos_a5 => and_atq_a5.IN0
+pos_b5 => and_atq_b5.IN0
+pos_c5 => and_atq_c5.IN0
+pos_d5 => and_atq_d5.IN0
+pos_e5 => and_atq_e5.IN0
+pos_a6 => and_atq_a6.IN0
+pos_b6 => and_atq_b6.IN0
+pos_c6 => and_atq_c6.IN0
+pos_d6 => and_atq_d6.IN0
+pos_e6 => and_atq_e6.IN0
+fa0 => and_atq_a0.IN1
+fb0 => and_atq_b0.IN1
+fc0 => and_atq_c0.IN1
+fd0 => and_atq_d0.IN1
+fe0 => and_atq_e0.IN1
+fa1 => and_atq_a1.IN1
+fb1 => and_atq_b1.IN1
+fc1 => and_atq_c1.IN1
+fd1 => and_atq_d1.IN1
+fe1 => and_atq_e1.IN1
+fa2 => and_atq_a2.IN1
+fb2 => and_atq_b2.IN1
+fc2 => and_atq_c2.IN1
+fd2 => and_atq_d2.IN1
+fe2 => and_atq_e2.IN1
+fa3 => and_atq_a3.IN1
+fb3 => and_atq_b3.IN1
+fc3 => and_atq_c3.IN1
+fd3 => and_atq_d3.IN1
+fe3 => and_atq_e3.IN1
+fa4 => and_atq_a4.IN1
+fb4 => and_atq_b4.IN1
+fc4 => and_atq_c4.IN1
+fd4 => and_atq_d4.IN1
+fe4 => and_atq_e4.IN1
+fa5 => and_atq_a5.IN1
+fb5 => and_atq_b5.IN1
+fc5 => and_atq_c5.IN1
+fd5 => and_atq_d5.IN1
+fe5 => and_atq_e5.IN1
+fa6 => and_atq_a6.IN1
+fb6 => and_atq_b6.IN1
+fc6 => and_atq_c6.IN1
+fd6 => and_atq_d6.IN1
+fe6 => and_atq_e6.IN1
+atq_a0 <= and_atq_a0.DB_MAX_OUTPUT_PORT_TYPE
+atq_b0 <= and_atq_b0.DB_MAX_OUTPUT_PORT_TYPE
+atq_c0 <= and_atq_c0.DB_MAX_OUTPUT_PORT_TYPE
+atq_d0 <= and_atq_d0.DB_MAX_OUTPUT_PORT_TYPE
+atq_e0 <= and_atq_e0.DB_MAX_OUTPUT_PORT_TYPE
+atq_a1 <= and_atq_a1.DB_MAX_OUTPUT_PORT_TYPE
+atq_b1 <= and_atq_b1.DB_MAX_OUTPUT_PORT_TYPE
+atq_c1 <= and_atq_c1.DB_MAX_OUTPUT_PORT_TYPE
+atq_d1 <= and_atq_d1.DB_MAX_OUTPUT_PORT_TYPE
+atq_e1 <= and_atq_e1.DB_MAX_OUTPUT_PORT_TYPE
+atq_a2 <= and_atq_a2.DB_MAX_OUTPUT_PORT_TYPE
+atq_b2 <= and_atq_b2.DB_MAX_OUTPUT_PORT_TYPE
+atq_c2 <= and_atq_c2.DB_MAX_OUTPUT_PORT_TYPE
+atq_d2 <= and_atq_d2.DB_MAX_OUTPUT_PORT_TYPE
+atq_e2 <= and_atq_e2.DB_MAX_OUTPUT_PORT_TYPE
+atq_a3 <= and_atq_a3.DB_MAX_OUTPUT_PORT_TYPE
+atq_b3 <= and_atq_b3.DB_MAX_OUTPUT_PORT_TYPE
+atq_c3 <= and_atq_c3.DB_MAX_OUTPUT_PORT_TYPE
+atq_d3 <= and_atq_d3.DB_MAX_OUTPUT_PORT_TYPE
+atq_e3 <= and_atq_e3.DB_MAX_OUTPUT_PORT_TYPE
+atq_a4 <= and_atq_a4.DB_MAX_OUTPUT_PORT_TYPE
+atq_b4 <= and_atq_b4.DB_MAX_OUTPUT_PORT_TYPE
+atq_c4 <= and_atq_c4.DB_MAX_OUTPUT_PORT_TYPE
+atq_d4 <= and_atq_d4.DB_MAX_OUTPUT_PORT_TYPE
+atq_e4 <= and_atq_e4.DB_MAX_OUTPUT_PORT_TYPE
+atq_a5 <= and_atq_a5.DB_MAX_OUTPUT_PORT_TYPE
+atq_b5 <= and_atq_b5.DB_MAX_OUTPUT_PORT_TYPE
+atq_c5 <= and_atq_c5.DB_MAX_OUTPUT_PORT_TYPE
+atq_d5 <= and_atq_d5.DB_MAX_OUTPUT_PORT_TYPE
+atq_e5 <= and_atq_e5.DB_MAX_OUTPUT_PORT_TYPE
+atq_a6 <= and_atq_a6.DB_MAX_OUTPUT_PORT_TYPE
+atq_b6 <= and_atq_b6.DB_MAX_OUTPUT_PORT_TYPE
+atq_c6 <= and_atq_c6.DB_MAX_OUTPUT_PORT_TYPE
+atq_d6 <= and_atq_d6.DB_MAX_OUTPUT_PORT_TYPE
+atq_e6 <= and_atq_e6.DB_MAX_OUTPUT_PORT_TYPE
+vermelho <= and_vermelho.DB_MAX_OUTPUT_PORT_TYPE
+verde <= and_verde.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|ataque:atacando|comparador:atq_x_pos
+ch7 => ~NO_FANOUT~
+ch6 => ~NO_FANOUT~
+botao => and_verde.IN1
+botao => and_vermelho.IN1
+pos_a0 => and_atq_a0.IN0
+pos_b0 => and_atq_b0.IN0
+pos_c0 => and_atq_c0.IN0
+pos_d0 => and_atq_d0.IN0
+pos_e0 => and_atq_e0.IN0
+pos_a1 => and_atq_a1.IN0
+pos_b1 => and_atq_b1.IN0
+pos_c1 => and_atq_c1.IN0
+pos_d1 => and_atq_d1.IN0
+pos_e1 => and_atq_e1.IN0
+pos_a2 => and_atq_a2.IN0
+pos_b2 => and_atq_b2.IN0
+pos_c2 => and_atq_c2.IN0
+pos_d2 => and_atq_d2.IN0
+pos_e2 => and_atq_e2.IN0
+pos_a3 => and_atq_a3.IN0
+pos_b3 => and_atq_b3.IN0
+pos_c3 => and_atq_c3.IN0
+pos_d3 => and_atq_d3.IN0
+pos_e3 => and_atq_e3.IN0
+pos_a4 => and_atq_a4.IN0
+pos_b4 => and_atq_b4.IN0
+pos_c4 => and_atq_c4.IN0
+pos_d4 => and_atq_d4.IN0
+pos_e4 => and_atq_e4.IN0
+pos_a5 => and_atq_a5.IN0
+pos_b5 => and_atq_b5.IN0
+pos_c5 => and_atq_c5.IN0
+pos_d5 => and_atq_d5.IN0
+pos_e5 => and_atq_e5.IN0
+pos_a6 => and_atq_a6.IN0
+pos_b6 => and_atq_b6.IN0
+pos_c6 => and_atq_c6.IN0
+pos_d6 => and_atq_d6.IN0
+pos_e6 => and_atq_e6.IN0
+fa0 => and_atq_a0.IN1
+fb0 => and_atq_b0.IN1
+fc0 => and_atq_c0.IN1
+fd0 => and_atq_d0.IN1
+fe0 => and_atq_e0.IN1
+fa1 => and_atq_a1.IN1
+fb1 => and_atq_b1.IN1
+fc1 => and_atq_c1.IN1
+fd1 => and_atq_d1.IN1
+fe1 => and_atq_e1.IN1
+fa2 => and_atq_a2.IN1
+fb2 => and_atq_b2.IN1
+fc2 => and_atq_c2.IN1
+fd2 => and_atq_d2.IN1
+fe2 => and_atq_e2.IN1
+fa3 => and_atq_a3.IN1
+fb3 => and_atq_b3.IN1
+fc3 => and_atq_c3.IN1
+fd3 => and_atq_d3.IN1
+fe3 => and_atq_e3.IN1
+fa4 => and_atq_a4.IN1
+fb4 => and_atq_b4.IN1
+fc4 => and_atq_c4.IN1
+fd4 => and_atq_d4.IN1
+fe4 => and_atq_e4.IN1
+fa5 => and_atq_a5.IN1
+fb5 => and_atq_b5.IN1
+fc5 => and_atq_c5.IN1
+fd5 => and_atq_d5.IN1
+fe5 => and_atq_e5.IN1
+fa6 => and_atq_a6.IN1
+fb6 => and_atq_b6.IN1
+fc6 => and_atq_c6.IN1
+fd6 => and_atq_d6.IN1
+fe6 => and_atq_e6.IN1
+atq_a0 <= and_atq_a0.DB_MAX_OUTPUT_PORT_TYPE
+atq_b0 <= and_atq_b0.DB_MAX_OUTPUT_PORT_TYPE
+atq_c0 <= and_atq_c0.DB_MAX_OUTPUT_PORT_TYPE
+atq_d0 <= and_atq_d0.DB_MAX_OUTPUT_PORT_TYPE
+atq_e0 <= and_atq_e0.DB_MAX_OUTPUT_PORT_TYPE
+atq_a1 <= and_atq_a1.DB_MAX_OUTPUT_PORT_TYPE
+atq_b1 <= and_atq_b1.DB_MAX_OUTPUT_PORT_TYPE
+atq_c1 <= and_atq_c1.DB_MAX_OUTPUT_PORT_TYPE
+atq_d1 <= and_atq_d1.DB_MAX_OUTPUT_PORT_TYPE
+atq_e1 <= and_atq_e1.DB_MAX_OUTPUT_PORT_TYPE
+atq_a2 <= and_atq_a2.DB_MAX_OUTPUT_PORT_TYPE
+atq_b2 <= and_atq_b2.DB_MAX_OUTPUT_PORT_TYPE
+atq_c2 <= and_atq_c2.DB_MAX_OUTPUT_PORT_TYPE
+atq_d2 <= and_atq_d2.DB_MAX_OUTPUT_PORT_TYPE
+atq_e2 <= and_atq_e2.DB_MAX_OUTPUT_PORT_TYPE
+atq_a3 <= and_atq_a3.DB_MAX_OUTPUT_PORT_TYPE
+atq_b3 <= and_atq_b3.DB_MAX_OUTPUT_PORT_TYPE
+atq_c3 <= and_atq_c3.DB_MAX_OUTPUT_PORT_TYPE
+atq_d3 <= and_atq_d3.DB_MAX_OUTPUT_PORT_TYPE
+atq_e3 <= and_atq_e3.DB_MAX_OUTPUT_PORT_TYPE
+atq_a4 <= and_atq_a4.DB_MAX_OUTPUT_PORT_TYPE
+atq_b4 <= and_atq_b4.DB_MAX_OUTPUT_PORT_TYPE
+atq_c4 <= and_atq_c4.DB_MAX_OUTPUT_PORT_TYPE
+atq_d4 <= and_atq_d4.DB_MAX_OUTPUT_PORT_TYPE
+atq_e4 <= and_atq_e4.DB_MAX_OUTPUT_PORT_TYPE
+atq_a5 <= and_atq_a5.DB_MAX_OUTPUT_PORT_TYPE
+atq_b5 <= and_atq_b5.DB_MAX_OUTPUT_PORT_TYPE
+atq_c5 <= and_atq_c5.DB_MAX_OUTPUT_PORT_TYPE
+atq_d5 <= and_atq_d5.DB_MAX_OUTPUT_PORT_TYPE
+atq_e5 <= and_atq_e5.DB_MAX_OUTPUT_PORT_TYPE
+atq_a6 <= and_atq_a6.DB_MAX_OUTPUT_PORT_TYPE
+atq_b6 <= and_atq_b6.DB_MAX_OUTPUT_PORT_TYPE
+atq_c6 <= and_atq_c6.DB_MAX_OUTPUT_PORT_TYPE
+atq_d6 <= and_atq_d6.DB_MAX_OUTPUT_PORT_TYPE
+atq_e6 <= and_atq_e6.DB_MAX_OUTPUT_PORT_TYPE
+vermelho <= and_vermelho.DB_MAX_OUTPUT_PORT_TYPE
+verde <= and_verde.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|mux70_35:mux_atq_def
+ch6 => and_a10.IN0
+ch6 => and_a11.IN0
+ch6 => and_a12.IN0
+ch6 => and_a13.IN0
+ch6 => and_a14.IN0
+ch6 => and_a15.IN0
+ch6 => and_a16.IN0
+ch6 => and_b10.IN0
+ch6 => and_b11.IN0
+ch6 => and_b12.IN0
+ch6 => and_b13.IN0
+ch6 => and_b14.IN0
+ch6 => and_b15.IN0
+ch6 => and_b16.IN0
+ch6 => and_c10.IN0
+ch6 => and_c11.IN0
+ch6 => and_c12.IN0
+ch6 => and_c13.IN0
+ch6 => and_c14.IN0
+ch6 => and_c15.IN0
+ch6 => and_c16.IN0
+ch6 => and_d10.IN0
+ch6 => and_d11.IN0
+ch6 => and_d12.IN0
+ch6 => and_d13.IN0
+ch6 => and_d14.IN0
+ch6 => and_d15.IN0
+ch6 => and_d16.IN0
+ch6 => and_e10.IN0
+ch6 => and_e11.IN0
+ch6 => and_e12.IN0
+ch6 => and_e13.IN0
+ch6 => and_e14.IN0
+ch6 => and_e15.IN0
+ch6 => and_e16.IN0
+ch6 => and_a00.IN0
+ch6 => and_a01.IN0
+ch6 => and_a02.IN0
+ch6 => and_a03.IN0
+ch6 => and_a04.IN0
+ch6 => and_a05.IN0
+ch6 => and_a06.IN0
+ch6 => and_b00.IN0
+ch6 => and_b01.IN0
+ch6 => and_b02.IN0
+ch6 => and_b03.IN0
+ch6 => and_b04.IN0
+ch6 => and_b05.IN0
+ch6 => and_b06.IN0
+ch6 => and_c00.IN0
+ch6 => and_c01.IN0
+ch6 => and_c02.IN0
+ch6 => and_c03.IN0
+ch6 => and_c04.IN0
+ch6 => and_c05.IN0
+ch6 => and_c06.IN0
+ch6 => and_d00.IN0
+ch6 => and_d01.IN0
+ch6 => and_d02.IN0
+ch6 => and_d03.IN0
+ch6 => and_d04.IN0
+ch6 => and_d05.IN0
+ch6 => and_d06.IN0
+ch6 => and_e00.IN0
+ch6 => and_e01.IN0
+ch6 => and_e02.IN0
+ch6 => and_e03.IN0
+ch6 => and_e04.IN0
+ch6 => and_e05.IN0
+ch6 => and_e06.IN0
+a00 => and_a00.IN1
+b00 => and_b00.IN1
+c00 => and_c00.IN1
+d00 => and_d00.IN1
+e00 => and_e00.IN1
+a01 => and_a01.IN1
+b01 => and_b01.IN1
+c01 => and_c01.IN1
+d01 => and_d01.IN1
+e01 => and_e01.IN1
+a02 => and_a02.IN1
+b02 => and_b02.IN1
+c02 => and_c02.IN1
+d02 => and_d02.IN1
+e02 => and_e02.IN1
+a03 => and_a03.IN1
+b03 => and_b03.IN1
+c03 => and_c03.IN1
+d03 => and_d03.IN1
+e03 => and_e03.IN1
+a04 => and_a04.IN1
+b04 => and_b04.IN1
+c04 => and_c04.IN1
+d04 => and_d04.IN1
+e04 => and_e04.IN1
+a05 => and_a05.IN1
+b05 => and_b05.IN1
+c05 => and_c05.IN1
+d05 => and_d05.IN1
+e05 => and_e05.IN1
+a06 => and_a06.IN1
+b06 => and_b06.IN1
+c06 => and_c06.IN1
+d06 => and_d06.IN1
+e06 => and_e06.IN1
+a10 => and_a10.IN1
+b10 => and_b10.IN1
+c10 => and_c10.IN1
+d10 => and_d10.IN1
+e10 => and_e10.IN1
+a11 => and_a11.IN1
+b11 => and_b11.IN1
+c11 => and_c11.IN1
+d11 => and_d11.IN1
+e11 => and_e11.IN1
+a12 => and_a12.IN1
+b12 => and_b12.IN1
+c12 => and_c12.IN1
+d12 => and_d12.IN1
+e12 => and_e12.IN1
+a13 => and_a13.IN1
+b13 => and_b13.IN1
+c13 => and_c13.IN1
+d13 => and_d13.IN1
+e13 => and_e13.IN1
+a14 => and_a14.IN1
+b14 => and_b14.IN1
+c14 => and_c14.IN1
+d14 => and_d14.IN1
+e14 => and_e14.IN1
+a15 => and_a15.IN1
+b15 => and_b15.IN1
+c15 => and_c15.IN1
+d15 => and_d15.IN1
+e15 => and_e15.IN1
+a16 => and_a16.IN1
+b16 => and_b16.IN1
+c16 => and_c16.IN1
+d16 => and_d16.IN1
+e16 => and_e16.IN1
+a0 <= or_a0.DB_MAX_OUTPUT_PORT_TYPE
+b0 <= or_b0.DB_MAX_OUTPUT_PORT_TYPE
+c0 <= or_c0.DB_MAX_OUTPUT_PORT_TYPE
+d0 <= or_d0.DB_MAX_OUTPUT_PORT_TYPE
+e0 <= or_e0.DB_MAX_OUTPUT_PORT_TYPE
+a1 <= or_a1.DB_MAX_OUTPUT_PORT_TYPE
+b1 <= or_b1.DB_MAX_OUTPUT_PORT_TYPE
+c1 <= or_c1.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= or_d1.DB_MAX_OUTPUT_PORT_TYPE
+e1 <= or_e1.DB_MAX_OUTPUT_PORT_TYPE
+a2 <= or_a2.DB_MAX_OUTPUT_PORT_TYPE
+b2 <= or_b2.DB_MAX_OUTPUT_PORT_TYPE
+c2 <= or_c2.DB_MAX_OUTPUT_PORT_TYPE
+d2 <= or_d2.DB_MAX_OUTPUT_PORT_TYPE
+e2 <= or_e2.DB_MAX_OUTPUT_PORT_TYPE
+a3 <= or_a3.DB_MAX_OUTPUT_PORT_TYPE
+b3 <= or_b3.DB_MAX_OUTPUT_PORT_TYPE
+c3 <= or_c3.DB_MAX_OUTPUT_PORT_TYPE
+d3 <= or_d3.DB_MAX_OUTPUT_PORT_TYPE
+e3 <= or_e3.DB_MAX_OUTPUT_PORT_TYPE
+a4 <= or_a4.DB_MAX_OUTPUT_PORT_TYPE
+b4 <= or_b4.DB_MAX_OUTPUT_PORT_TYPE
+c4 <= or_c4.DB_MAX_OUTPUT_PORT_TYPE
+d4 <= or_d4.DB_MAX_OUTPUT_PORT_TYPE
+e4 <= or_e4.DB_MAX_OUTPUT_PORT_TYPE
+a5 <= or_a5.DB_MAX_OUTPUT_PORT_TYPE
+b5 <= or_b5.DB_MAX_OUTPUT_PORT_TYPE
+c5 <= or_c5.DB_MAX_OUTPUT_PORT_TYPE
+d5 <= or_d5.DB_MAX_OUTPUT_PORT_TYPE
+e5 <= or_e5.DB_MAX_OUTPUT_PORT_TYPE
+a6 <= or_a6.DB_MAX_OUTPUT_PORT_TYPE
+b6 <= or_b6.DB_MAX_OUTPUT_PORT_TYPE
+c6 <= or_c6.DB_MAX_OUTPUT_PORT_TYPE
+d6 <= or_d6.DB_MAX_OUTPUT_PORT_TYPE
+e6 <= or_e6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final
+a0 => a0.IN1
+b0 => b0.IN1
+c0 => c0.IN1
+d0 => d0.IN1
+e0 => e0.IN1
+a1 => a1.IN1
+b1 => b1.IN1
+c1 => c1.IN1
+d1 => d1.IN1
+e1 => e1.IN1
+a2 => a2.IN1
+b2 => b2.IN1
+c2 => c2.IN1
+d2 => d2.IN1
+e2 => e2.IN1
+a3 => a3.IN1
+b3 => b3.IN1
+c3 => c3.IN1
+d3 => d3.IN1
+e3 => e3.IN1
+a4 => a4.IN1
+b4 => b4.IN1
+c4 => c4.IN1
+d4 => d4.IN1
+e4 => e4.IN1
+a5 => a5.IN1
+b5 => b5.IN1
+c5 => c5.IN1
+d5 => d5.IN1
+e5 => e5.IN1
+a6 => a6.IN1
+b6 => b6.IN1
+c6 => c6.IN1
+d6 => d6.IN1
+e6 => e6.IN1
+clk_div => clk_div.IN2
+ca <= mux35_5:E_mux35_5.ca
+cb <= mux35_5:E_mux35_5.cb
+cc <= mux35_5:E_mux35_5.cc
+cd <= mux35_5:E_mux35_5.cd
+ce <= mux35_5:E_mux35_5.ce
+l0 <= demux_count_3b:E_demux_count_3b.l0
+l1 <= demux_count_3b:E_demux_count_3b.l1
+l2 <= demux_count_3b:E_demux_count_3b.l2
+l3 <= demux_count_3b:E_demux_count_3b.l3
+l4 <= demux_count_3b:E_demux_count_3b.l4
+l5 <= demux_count_3b:E_demux_count_3b.l5
+l6 <= demux_count_3b:E_demux_count_3b.l6
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|demux_count_3b:E_demux_count_3b
+clk_div => clk_div.IN1
+l0 <= and_q000.DB_MAX_OUTPUT_PORT_TYPE
+l1 <= and_q001.DB_MAX_OUTPUT_PORT_TYPE
+l2 <= and_q010.DB_MAX_OUTPUT_PORT_TYPE
+l3 <= and_q011.DB_MAX_OUTPUT_PORT_TYPE
+l4 <= and_q100.DB_MAX_OUTPUT_PORT_TYPE
+l5 <= and_q101.DB_MAX_OUTPUT_PORT_TYPE
+l6 <= and_q110.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|demux_count_3b:E_demux_count_3b|contador_3bits:count3
+clk_div => clk_div.IN1
+q0 <= contador_2bits:count3_01.q0
+q1 <= q1.DB_MAX_OUTPUT_PORT_TYPE
+q2 <= t_flip_flop:count3_2.q
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|demux_count_3b:E_demux_count_3b|contador_3bits:count3|contador_2bits:count3_01
+clk_div => clk_div.IN1
+q0 <= q0.DB_MAX_OUTPUT_PORT_TYPE
+q1 <= t_flip_flop:count1_2.q
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|demux_count_3b:E_demux_count_3b|contador_3bits:count3|contador_2bits:count3_01|t_flip_flop:count0_2
+clk => q_reg.CLK
+t => q_reg.ENA
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|demux_count_3b:E_demux_count_3b|contador_3bits:count3|contador_2bits:count3_01|t_flip_flop:count1_2
+clk => q_reg.CLK
+t => q_reg.ENA
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|demux_count_3b:E_demux_count_3b|contador_3bits:count3|t_flip_flop:count3_2
+clk => q_reg.CLK
+t => q_reg.ENA
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|contador_3bits:count3
+clk_div => clk_div.IN1
+q0 <= contador_2bits:count3_01.q0
+q1 <= q1.DB_MAX_OUTPUT_PORT_TYPE
+q2 <= t_flip_flop:count3_2.q
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|contador_3bits:count3|contador_2bits:count3_01
+clk_div => clk_div.IN1
+q0 <= q0.DB_MAX_OUTPUT_PORT_TYPE
+q1 <= t_flip_flop:count1_2.q
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|contador_3bits:count3|contador_2bits:count3_01|t_flip_flop:count0_2
+clk => q_reg.CLK
+t => q_reg.ENA
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|contador_3bits:count3|contador_2bits:count3_01|t_flip_flop:count1_2
+clk => q_reg.CLK
+t => q_reg.ENA
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|contador_3bits:count3|t_flip_flop:count3_2
+clk => q_reg.CLK
+t => q_reg.ENA
+q <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|mux35_5:E_mux35_5
+a0 => and_la0.IN0
+b0 => and_lb0.IN0
+c0 => and_lc0.IN0
+d0 => and_ld0.IN0
+e0 => and_le0.IN0
+a1 => and_la1.IN0
+b1 => and_lb1.IN0
+c1 => and_lc1.IN0
+d1 => and_ld1.IN0
+e1 => and_le1.IN0
+a2 => and_la2.IN0
+b2 => and_lb2.IN0
+c2 => and_lc2.IN0
+d2 => and_ld2.IN0
+e2 => and_le2.IN0
+a3 => and_la3.IN0
+b3 => and_lb3.IN0
+c3 => and_lc3.IN0
+d3 => and_ld3.IN0
+e3 => and_le3.IN0
+a4 => and_la4.IN0
+b4 => and_lb4.IN0
+c4 => and_lc4.IN0
+d4 => and_ld4.IN0
+e4 => and_le4.IN0
+a5 => and_la5.IN0
+b5 => and_lb5.IN0
+c5 => and_lc5.IN0
+d5 => and_ld5.IN0
+e5 => and_le5.IN0
+a6 => and_la6.IN0
+b6 => and_lb6.IN0
+c6 => and_lc6.IN0
+d6 => and_ld6.IN0
+e6 => and_le6.IN0
+l0 => and_la0.IN1
+l0 => and_lb0.IN1
+l0 => and_lc0.IN1
+l0 => and_ld0.IN1
+l0 => and_le0.IN1
+l1 => and_la1.IN1
+l1 => and_lb1.IN1
+l1 => and_lc1.IN1
+l1 => and_ld1.IN1
+l1 => and_le1.IN1
+l2 => and_la2.IN1
+l2 => and_lb2.IN1
+l2 => and_lc2.IN1
+l2 => and_ld2.IN1
+l2 => and_le2.IN1
+l3 => and_la3.IN1
+l3 => and_lb3.IN1
+l3 => and_lc3.IN1
+l3 => and_ld3.IN1
+l3 => and_le3.IN1
+l4 => and_la4.IN1
+l4 => and_lb4.IN1
+l4 => and_lc4.IN1
+l4 => and_ld4.IN1
+l4 => and_le4.IN1
+l5 => and_la5.IN1
+l5 => and_lb5.IN1
+l5 => and_lc5.IN1
+l5 => and_ld5.IN1
+l5 => and_le5.IN1
+l6 => and_la6.IN1
+l6 => and_lb6.IN1
+l6 => and_lc6.IN1
+l6 => and_ld6.IN1
+l6 => and_le6.IN1
+ca <= or_ca.DB_MAX_OUTPUT_PORT_TYPE
+cb <= or_cb.DB_MAX_OUTPUT_PORT_TYPE
+cc <= or_cc.DB_MAX_OUTPUT_PORT_TYPE
+cd <= or_cd.DB_MAX_OUTPUT_PORT_TYPE
+ce <= or_ce.DB_MAX_OUTPUT_PORT_TYPE
+
+

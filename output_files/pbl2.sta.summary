@@ -1,0 +1,281 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'clock_divisor_16x:div_freq|t_flip_flop:ff15|q_reg'
+Slack : -5.302
+TNS   : -150.853
+
+Type  : Setup 'ch6'
+Slack : -3.072
+TNS   : -57.106
+
+Type  : Setup 'matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|demux_count_3b:E_demux_count_3b|contador_3bits:count3|contador_2bits:count3_01|t_flip_flop:count1_2|q_reg'
+Slack : -1.268
+TNS   : -1.268
+
+Type  : Setup 'mux_demux_seg:exibir_seg|contador_2bits:cont_seg|t_flip_flop:count0_2|q_reg'
+Slack : -1.238
+TNS   : -1.238
+
+Type  : Setup 'matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|contador_3bits:count3|contador_2bits:count3_01|t_flip_flop:count1_2|q_reg'
+Slack : -1.194
+TNS   : -1.194
+
+Type  : Setup 'clock_divisor_16x:div_freq|t_flip_flop:ff5|q_reg'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Setup 'clock_divisor_16x:div_freq|t_flip_flop:ff7|q_reg'
+Slack : 0.459
+TNS   : 0.000
+
+Type  : Setup 'clock_divisor_16x:div_freq|t_flip_flop:ff9|q_reg'
+Slack : 0.465
+TNS   : 0.000
+
+Type  : Setup 'clock_divisor_16x:div_freq|t_flip_flop:ff2|q_reg'
+Slack : 0.466
+TNS   : 0.000
+
+Type  : Setup 'clock_divisor_16x:div_freq|t_flip_flop:ff0|q_reg'
+Slack : 0.468
+TNS   : 0.000
+
+Type  : Setup 'clock_divisor_16x:div_freq|t_flip_flop:ff12|q_reg'
+Slack : 0.469
+TNS   : 0.000
+
+Type  : Setup 'clock_divisor_16x:div_freq|t_flip_flop:ff3|q_reg'
+Slack : 0.601
+TNS   : 0.000
+
+Type  : Setup 'clock_divisor_16x:div_freq|t_flip_flop:ff13|q_reg'
+Slack : 0.766
+TNS   : 0.000
+
+Type  : Setup 'clock_divisor_16x:div_freq|t_flip_flop:ff10|q_reg'
+Slack : 0.782
+TNS   : 0.000
+
+Type  : Setup 'clock_divisor_16x:div_freq|t_flip_flop:ff8|q_reg'
+Slack : 0.808
+TNS   : 0.000
+
+Type  : Setup 'matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|demux_count_3b:E_demux_count_3b|contador_3bits:count3|contador_2bits:count3_01|t_flip_flop:count0_2|q_reg'
+Slack : 0.899
+TNS   : 0.000
+
+Type  : Setup 'clock_divisor_16x:div_freq|t_flip_flop:ff1|q_reg'
+Slack : 1.090
+TNS   : 0.000
+
+Type  : Setup 'clock_divisor_16x:div_freq|t_flip_flop:ff14|q_reg'
+Slack : 1.187
+TNS   : 0.000
+
+Type  : Setup 'matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|contador_3bits:count3|contador_2bits:count3_01|t_flip_flop:count0_2|q_reg'
+Slack : 1.294
+TNS   : 0.000
+
+Type  : Setup 'clock_divisor_16x:div_freq|t_flip_flop:ff11|q_reg'
+Slack : 1.443
+TNS   : 0.000
+
+Type  : Setup 'clock_divisor_16x:div_freq|t_flip_flop:ff6|q_reg'
+Slack : 1.486
+TNS   : 0.000
+
+Type  : Setup 'clock_divisor_16x:div_freq|t_flip_flop:ff4|q_reg'
+Slack : 1.524
+TNS   : 0.000
+
+Type  : Setup 'clk'
+Slack : 2.209
+TNS   : 0.000
+
+Type  : Hold 'clock_divisor_16x:div_freq|t_flip_flop:ff15|q_reg'
+Slack : -2.386
+TNS   : -6.830
+
+Type  : Hold 'clk'
+Slack : -2.263
+TNS   : -2.263
+
+Type  : Hold 'clock_divisor_16x:div_freq|t_flip_flop:ff4|q_reg'
+Slack : -1.578
+TNS   : -1.578
+
+Type  : Hold 'clock_divisor_16x:div_freq|t_flip_flop:ff6|q_reg'
+Slack : -1.540
+TNS   : -1.540
+
+Type  : Hold 'clock_divisor_16x:div_freq|t_flip_flop:ff11|q_reg'
+Slack : -1.497
+TNS   : -1.497
+
+Type  : Hold 'matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|contador_3bits:count3|contador_2bits:count3_01|t_flip_flop:count0_2|q_reg'
+Slack : -1.348
+TNS   : -1.348
+
+Type  : Hold 'clock_divisor_16x:div_freq|t_flip_flop:ff14|q_reg'
+Slack : -1.241
+TNS   : -1.241
+
+Type  : Hold 'clock_divisor_16x:div_freq|t_flip_flop:ff1|q_reg'
+Slack : -1.144
+TNS   : -1.144
+
+Type  : Hold 'matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|demux_count_3b:E_demux_count_3b|contador_3bits:count3|contador_2bits:count3_01|t_flip_flop:count0_2|q_reg'
+Slack : -0.953
+TNS   : -0.953
+
+Type  : Hold 'clock_divisor_16x:div_freq|t_flip_flop:ff8|q_reg'
+Slack : -0.862
+TNS   : -0.862
+
+Type  : Hold 'clock_divisor_16x:div_freq|t_flip_flop:ff10|q_reg'
+Slack : -0.836
+TNS   : -0.836
+
+Type  : Hold 'clock_divisor_16x:div_freq|t_flip_flop:ff13|q_reg'
+Slack : -0.820
+TNS   : -0.820
+
+Type  : Hold 'clock_divisor_16x:div_freq|t_flip_flop:ff3|q_reg'
+Slack : -0.655
+TNS   : -0.655
+
+Type  : Hold 'ch6'
+Slack : -0.594
+TNS   : -15.318
+
+Type  : Hold 'clock_divisor_16x:div_freq|t_flip_flop:ff12|q_reg'
+Slack : -0.523
+TNS   : -0.523
+
+Type  : Hold 'clock_divisor_16x:div_freq|t_flip_flop:ff0|q_reg'
+Slack : -0.522
+TNS   : -0.522
+
+Type  : Hold 'clock_divisor_16x:div_freq|t_flip_flop:ff2|q_reg'
+Slack : -0.520
+TNS   : -0.520
+
+Type  : Hold 'clock_divisor_16x:div_freq|t_flip_flop:ff9|q_reg'
+Slack : -0.519
+TNS   : -0.519
+
+Type  : Hold 'clock_divisor_16x:div_freq|t_flip_flop:ff7|q_reg'
+Slack : -0.513
+TNS   : -0.513
+
+Type  : Hold 'clock_divisor_16x:div_freq|t_flip_flop:ff5|q_reg'
+Slack : -0.262
+TNS   : -0.262
+
+Type  : Hold 'matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|contador_3bits:count3|contador_2bits:count3_01|t_flip_flop:count1_2|q_reg'
+Slack : 1.640
+TNS   : 0.000
+
+Type  : Hold 'mux_demux_seg:exibir_seg|contador_2bits:cont_seg|t_flip_flop:count0_2|q_reg'
+Slack : 1.684
+TNS   : 0.000
+
+Type  : Hold 'matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|demux_count_3b:E_demux_count_3b|contador_3bits:count3|contador_2bits:count3_01|t_flip_flop:count1_2|q_reg'
+Slack : 1.714
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'ch6'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'clk'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'clock_divisor_16x:div_freq|t_flip_flop:ff0|q_reg'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock_divisor_16x:div_freq|t_flip_flop:ff10|q_reg'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock_divisor_16x:div_freq|t_flip_flop:ff11|q_reg'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock_divisor_16x:div_freq|t_flip_flop:ff12|q_reg'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock_divisor_16x:div_freq|t_flip_flop:ff13|q_reg'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock_divisor_16x:div_freq|t_flip_flop:ff14|q_reg'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock_divisor_16x:div_freq|t_flip_flop:ff15|q_reg'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock_divisor_16x:div_freq|t_flip_flop:ff1|q_reg'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock_divisor_16x:div_freq|t_flip_flop:ff2|q_reg'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock_divisor_16x:div_freq|t_flip_flop:ff3|q_reg'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock_divisor_16x:div_freq|t_flip_flop:ff4|q_reg'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock_divisor_16x:div_freq|t_flip_flop:ff5|q_reg'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock_divisor_16x:div_freq|t_flip_flop:ff6|q_reg'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock_divisor_16x:div_freq|t_flip_flop:ff7|q_reg'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock_divisor_16x:div_freq|t_flip_flop:ff8|q_reg'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock_divisor_16x:div_freq|t_flip_flop:ff9|q_reg'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|contador_3bits:count3|contador_2bits:count3_01|t_flip_flop:count0_2|q_reg'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|contador_3bits:count3|contador_2bits:count3_01|t_flip_flop:count1_2|q_reg'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|demux_count_3b:E_demux_count_3b|contador_3bits:count3|contador_2bits:count3_01|t_flip_flop:count0_2|q_reg'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'matrizes_e_rbg:pos_atq_rbg|exibir_matriz:matriz_final|demux_count_3b:E_demux_count_3b|contador_3bits:count3|contador_2bits:count3_01|t_flip_flop:count1_2|q_reg'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'mux_demux_seg:exibir_seg|contador_2bits:cont_seg|t_flip_flop:count0_2|q_reg'
+Slack : 0.234
+TNS   : 0.000
+
+------------------------------------------------------------
